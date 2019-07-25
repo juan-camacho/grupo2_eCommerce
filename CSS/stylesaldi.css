@@ -134,14 +134,7 @@ header span i:hover  {
 }
 
 /* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
-#btn_can{
-    background-color: tomato;
-    color: white;
-}
-#btn_can:hover{
-    background-color: #282C34;
-    color: tomato;
-}
+
 .btn_form {
     border: none;
     width: 100%;
@@ -158,6 +151,7 @@ header span i:hover  {
 .btn_form:hover{
     background-color: #282C34;
     color: #33CC99;
+
   }
   /* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
 
@@ -165,8 +159,7 @@ header span i:hover  {
   /* ----------- FULLSLIDER HOME ------------ */
 
 .fullslider {
-
-  background: url(../) no-repeat fixed center;
+  background: url(../images/banner.jpeg); /* no-repeat fixed center; */
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -241,31 +234,6 @@ header span i:hover  {
     color: #fff;
 
 }
-.listado_productos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.producto {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    background-color: #ffffff;
-}
-.producto img {
-    max-width: 50%;
-}
-.producto .txt-producto{
-    padding: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-.txt-producto h3 {
-    font-size: .9rem;
-    line-height: 1.5;
-}
-.txt-producto span {
-    color: #db008d;
-}
 /* Fin SECTION: NPRODUCTS */
 
 
@@ -323,22 +291,15 @@ header span i:hover  {
     background-position: center;
     position: relative;
 }
-#faqs_1 {
+#faqs {
     background-image: url(../images/faqs_1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
-#faqs_2{
-    background-image: url(../images/faqs_2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-#faqs_3{
-    background-image: url(../images/faqs_3.jpeg);
+#faqs_1{
+    background-image: url(../images/faqs_1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -383,6 +344,7 @@ header span i:hover  {
 
 
 /* ------------ SECTION FAQS BENEFICIOS------ */
+
 .beneficios-list{
 margin-top: 100px;
 padding: 1rem;
@@ -392,7 +354,7 @@ width: 70%;
 height: auto;
 display: grid;
 grid-template-columns: 30% 30% 30%;
-grid-template-rows: repeat(4,1fr);
+grid-template-rows: repeat(4,1fr)
 }
 
 .beneficio_1{
@@ -421,122 +383,19 @@ grid-template-rows: repeat(4,1fr);
     padding-right: 20%;
     padding-left: 10%;
 }
-/* =====================================
-        perfil de usuario AS - 09.07.2019
-    ==================================== */
-
-.usuario {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #E6E6E6;
-  background-color: grey;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  background-color: #E6E6E6;
-  border-radius: 15px;
-}
-
-.usuarioarriba {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 10px;
 
 
-}
-
-.avatar {
-    height: 250px;
-    width: 250px;
-    background: url(../images/perfil.png) no-repeat fixed center;
-    background-size: cover;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 100% auto;
-    border: 1px solid grey;
-    margin: 0 auto;
-    margin-top: 100px;
-
-}
 
 
-.usuarioabajo{
-  margin-top: 10px;
-  background-color: white;
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.bloque{
-  background-color: #842eda;
-  height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-.interlineado{
-  height: 50px;
-  width: 100%;
-  border-bottom: 1px solid grey;
-}
 
 
-.bloque h5{
-  font-size:  1.2rem;
-  color: white;
-}
 
-.mediosdepago {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-
-}
-
-.tarjeta {
-  width: 100%;
-  border-bottom: 1px dotted grey;
-  background-color: white;
-  height: 100%;
-  text-align: center;
-}
-/*--------------fin de perfil de usuario----*/
-
-/* ----------- PROXIMAMENTE------------ */
-
-.proximo {
-display: flex;
-background: url(../images/edita.jpeg) no-repeat fixed center;
-background-size: cover;
-height: 100vh;
-max-width: 100%;
-justify-content: center;
-align-items: center;
-background-position: center;
-min-width: 300px;
-margin-bottom: 2rem;
-padding: 2rem;
-}
 
 
 @media (min-width: 768px) {
 /* ----------- SECTION:FULLSLIDERTABLET----------- */
 
-.fullslider{
+.fullslider {
     justify-content: flex-start;
 }
 
@@ -605,9 +464,9 @@ padding: 2rem;
 
 .textonfilonhistorias h4 {
     color: rgba(200, 200, 200);
-    weight: 100;
+    /* weight: 100; */
 }
-}
+
 /* ----------- SECTION:NFILODESKTOP  ------------ */
 
 /* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
@@ -636,11 +495,11 @@ padding: 2rem;
     order: 2;
 }
 
-#imgicons, #faqs_2{
+#imgicons{
     order: 5;
 }
 
-#imgabc, #faqs_3{
+#imgabc{
     order: 3;
 }
 
@@ -648,302 +507,72 @@ padding: 2rem;
     order: 6;
 }
 
-/*  AP 09.07.2019 .... ESTILOS FORMULARIOS */
-/*
-  .formularios {
-    width: 100%;
-    background: url(../images/armar.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    height: 100vh;
-
-} */
-.threed:hover
-{
-box-shadow:
-1px 1px #53a7ea,
-2px 2px #53a7ea,
-3px 3px #53a7ea;
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-}
-.formularios {
-    background: url(../images/benito.jpg);
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
-    min-width: 300px;;
-    margin-bottom: 2rem;
-    padding: 2rem;
-}
-.contenedor_ap {
-    width: 90%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 0 auto;
-}
-
- .formulario_ap h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin: 0;
-}
-.formulario_ap {
-    background: #E6E6E6;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 6rem;
-    padding:1rem;
-    border-radius: 15px;
-    margin-right: 2rem;
-}
-input[type="text"], input[type="password"] {
-    background-color: #E6E6E6;
-    font-size: 1rem;
-    width: 80%;
-    padding:10px;
-    border: none;
-}
-
-.input_contenedor_ap {
-    margin-bottom:1.4rem;
-    border: solid 0.1rem #aaa;
-}
-.icon {
-    min-width: 40px;
-    color: #999;
-    text-align: center;
-}
-.btn_form {
-    border: none;
-    width: 100%;
-    color:#fff;
-    font-size: 1.4rem;
-    background-color: aquamarine;
-    padding: 15px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-form p {
-    text-align: center;
-}
-a.link {
-    font-weight: 600;
-    text-decoration: none;
-}
-
-@media (min-width: 768px) {
-    .formulario_ap {
-        margin: auto;
-        width: 500px;
-        border-radius: 15px;
-
-    }
-
-}
-
 /* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
 }
-/*------------------- footer provicional------------------------*/
-footer {
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #E6E6E6;
-  margin-top: 10px;
-  }
-
-  .footerparte {
-    display:flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 300px;
-    padding-left: 5%;
-  }
-
-  .algo {
-    width: 100%;
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  .footerparte img {
-    width: 300px;
-  }
-
-
-  .footerparte i {
-    font-size: 1.5rem;
+/* ================ aldana pruebas ================= */
+h3.tienda {
+    font-size: 7rem;
+}
+.titulo_producto {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.listado_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-
-  .footerparte:nth-child(3) {
-    background-color: #33CC99;
-    margin-top: 0;
-  }
-
-  .footerparte:nth-child(2) {
-    display: none;
-  }
-@media (min-width: 600px) {
-  footer {
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-      }
-
-      .footerparte:nth-child(2) {
-        display: flex;
-      }
-
-
-  .usuario {
+.producto {
+    flex-basis:200px;
+    display: flex;
     flex-direction: column;
-    width: 70%;
-
-  }
-  .mediosdepago {
-    flex-direction: row;
-  }
-
-  .tarjeta {
-    border-right: 1px dotted grey;
-    border-bottom: 0px;
-  }
-    .tarjeta:nth-last-child() {
-      width: 100%;
-      border-right: 1px dotted grey;
-      background-color: blue;
-      height: 100%;
-      text-align: center;
-    }
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color:rgba(255, 255, 255, .8);
+    border:solid 0.6px;
+    border-radius: 5%;
 }
-@media (min-width:321px) and (max-width:800px) {
+.producto img {
+    max-width: 320px;
+    border-radius: 5%;
+}
+.img_producto {
+    margin-bottom: 1rem;
 
-  .main_footer {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color:#E6E6E6;
-  }
-  .social_footer_1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-  }
-  .social_footer_1 a {
-      display: inline-block;
-      text-decoration: none;
-      color: #282C34;
-  }
-  .social_footer_1 a i {
-      font-size: 2rem;
-      margin: 1rem;
-  }
-
-  .txt_footer {
-      margin-top: 0;
-      text-align: center;
-
-  }
-  .img-footer .proximo{
-      margin-top: 1.8rem;
-      width: 100%;
-      text-align: center;
-  }
- }
-@media (min-width: 801px) {
-   .main-footer{
-     background-color:  #33CC99;
-     display: flex;
-   }
-
-   .footer1 {
-    display:flex;
-    width:33vw;
-    border: 1px solid white;
-    }
-
-
-
-    .nuestraslineas {
-      display: flex;
-      flex-direction: row;
-      background-color: pink;
-    }
-
-
-    .linea {
-      border: 1px solid white;
-      width: 100%;
-      height: 100%;
-      display:flex;
-      flex-direction: column;
-
-    }
-
-    .lineatexto {
-      height: 50%;
-    }
-
-      .lineatexto2 {
-        background-color: #E6E6E6;
-        border: 1px solid white;
-        width:  100%;
-        height:  100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: justify;
-        padding: 30px;
+}
+.btn_producto {
+        color:#fff;
+        text-decoration: none;
         font-size: 1.2rem;
-        font-weight: 100;
-        height: 50%;
-        line-height: 80%;
-       }
-
-       .main_footer {
-           flex-direction: row;
-           align-content: center;
-           justify-content: space-between;
-           background-color:#E6E6E6;
-           flex-wrap: wrap;
-       }
-       .social_footer_1{
-           flex-basis: 100%;
-           margin: 0 auto;
-           flex-direction: row;
-           justify-content: center;
+        display: inline-block;
+        text-align: center;
+        border: none;
+        display: block;
+        text-transform: uppercase;
+        background-color: #33CC99;
 
 
-       }
-       .social_footer_1a {
-           display: inline;
-           text-decoration: none;
-           color: #282C34;
-
-       }
-       .social_footer_1 a i {
-           font-size: 2rem;
-           margin: 1rem;
-       }
-
-       .txt_footer {
-           text-align: left;
-           margin-left: 2rem;
-
-       }
-       .img-footer {
-           padding:0;
-           margin-top: 1.8rem;
-           text-align: center;
-           width: auto;
-  }
+    }
+    @media (min-width: 768px) {
+        .boton {
+            display: inline-block;
+            flex: 0 0 auto;
+        }
+    }
+    .boton:hover {
+        cursor: pointer;
+    }
+.txt-producto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.txt-producto .precio {
+    font-weight: bolder;
+    color: red;
+    font-size: 1.4rem;
 }

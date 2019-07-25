@@ -1,0 +1,696 @@
+/* proyectointegrador
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+COLOR TURQUESA> #33CC99
+
+*/
+
+
+
+/* ---- GENERALES ----- */
+
+*{
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: #333;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+
+h3 {
+  font-size: 2.75rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+p {
+text-align: justify;
+}
+
+/* ---- TIPOS DE FLEX GENERALES  ----- */
+
+.flex_cen_cen_full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+}
+
+.white {
+    color: white;
+}
+
+.turquesa {
+    color: #33CC99;
+}
+/* ---- FIN DE GENERALES ----- */
+
+/* Header - USA CLASES DE BOOTSTRAP*/
+
+header {
+    font-size: 0.8em;
+}
+
+ .navbar {
+    background-color: rgba(255, 255, 255, .8) ;
+    padding: 1em 0 !important;
+ }
+
+ .navbar-brand {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 10PX;
+ }
+
+ .navbar-brand img {
+    width:140px;
+ }
+
+ .navbar-nav {
+   padding-left: 20px;
+ }
+
+ .navbar-toggler  {
+    border: none !important;
+    outline: none !important;
+ }
+
+header span i  {
+    font-size: 1.5em;
+    color: black;
+ }
+
+header span i:hover  {
+    color: #33CC99; /* FUNCIONA A MEDIAS */
+}
+
+.nav-item a i  {
+    font-size: 1.5em;
+}
+
+.nav-item a i:hover  {
+    color: #33CC99;
+}
+
+/* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
+
+.btn_form {
+    border: none;
+    width: 100%;
+    color:#fff;
+    font-size: 1rem;
+    background-color: #33CC99;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_form:hover{
+    background-color: #282C34;
+    color: #33CC99;
+
+  }
+  /* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
+
+
+  /* ----------- FULLSLIDER HOME ------------ */
+
+.fullslider {
+    background: url(../images/banner.jpeg) no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.fullslider div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fullslider div h3 {
+    align-self: flex-start;
+}
+
+/* ----------- SECTION:NFILO ------------ */
+
+#fondogrisclaro {
+    background-color:  rgba(210, 210, 210, 0.2) ;
+}
+
+.textonfilonhistorias {
+    padding: 10%;
+}
+
+.textonfilonhistorias p{
+    text-align: justify;
+}
+
+.flex_cen_cen_full div {
+    height: 100%;
+}
+
+.flex_cen_cen_full div img {
+    width: 100%;
+}
+
+.nfilonhistorias .btn_form {
+    width: 40%;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+/* ----------- SECTION:NFILO  ------------ */
+
+
+/* ----------- SECTION:NPRODUCTS ------------ */
+
+.containergrid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    height: 100vh;
+}
+
+
+.nproducts .titular{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.titular .btn_form {
+    display:none;
+}
+
+#txticons, #txtnumbers, #txtabc {
+    display: none;
+}
+
+#imgnumbers {
+    background-image: url(../images/babuinonumbers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#imgicons {
+    background-image: url(../images/babuinoicons.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#imgabc {
+    background-image: url(../images/babuinabcdario.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.subtitulo {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    font-size: 2rem;
+    align-self: center;
+    text-align: right;
+    padding-right: 10px;
+    z-index: 99;
+}
+
+.vermas {
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 100;
+}
+
+.vermas:hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 44, 52);
+    color:rgba(255, 255, 255);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    transition: 0.4s;
+    text-shadow: 2px 2px 2px #33CC99;
+}
+
+/* ----------- SECTION:NHISTORIAS----------- */
+
+
+
+#fondogrisoscuro {
+    background-color: rgba(40, 44, 52);
+}
+
+
+#textohistorias {
+    padding-right: 20%;
+    padding-left: 10%;
+}
+
+/* ----------- SECTION:FOOTER----------- */
+#footer {
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+.partefooter {
+    width:100%;
+    background-color: rgba(255, 255, 255, .8);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#imgfooter {
+    background-color: #33FFCC;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#imgfooter img {
+    height: 60px;
+}
+
+
+
+/* ----------- SECTION:FOOTER----------- */
+
+
+
+/* ----------- SECTION:PRODUCTO---------- */
+
+
+.preview {
+    width: 25%;
+}
+
+
+/* Useful Classes */
+
+.containerproducto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.galeriaproducto {
+  width: 100%;
+}
+
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 80%;
+
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 25%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+  border: 3px solid white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+
+.textoproducto {
+width: 100%;
+padding: 50px;
+
+}
+
+.precioytitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titulo {
+  flex-grow: 2;
+}
+
+.titulo h3 {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.titulo h4 {
+  color: grey;
+  font-size: 1.4rem;
+}
+
+.precio {
+  flex-grow: 1;
+  text-align: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+}
+
+.descripcionprod {
+  padding-top: 40px;
+
+  }
+
+  .tablaelecciones {
+    width: 100%;
+    padding-top: 2%;
+    padding-top: 2%;
+  }
+
+  .tituloyaleatorio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.elegiizq {
+  flex-grow: 2;
+
+}
+
+.elegiizq h4{
+  flex-grow: 2;
+  font-size: 1.3rem;
+
+}
+
+.aleatorio{
+  flex-grow: 1;
+  text-align: right;
+
+}
+
+.colores   {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.color {
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.4em;
+}
+
+.color .select select {
+  width: 100%;
+  border-radius: 1px;
+  background-color: rgba(210, 210, 210, .8);
+}
+
+.custom-control-label {
+  font-size: 1.2rem;
+
+}
+
+.comprar {
+padding-top: 20px;
+width: 90%;
+margin: 0 auto;
+
+.containerproducto
+
+}
+
+
+/* ----------- SECTION:PRODUCTO---------- */
+
+@media (min-width: 768px) {
+/* ----------- SECTION:FULLSLIDERTABLET----------- */
+
+.fullslider {
+    justify-content: flex-start;
+}
+
+/* ----------- SECTION:FULLSLIDERTABLET----------- */
+
+/* ----------- SECTION:NPRODUCTSTABLET----------- */
+.containergrid {
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    grid-template-rows: repeat 1fr, 1fr, 1fr;
+    height: 600px;
+}
+
+.nproducts .titular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titular .btn_form {
+    width: 20%;
+    height: 50px;
+    text-transform: uppercase;
+    flex-grow: 0.5;
+}
+
+#txticons, #txtnumbers, #txtabc {
+    display: flex;
+    padding: 10%;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(210, 210, 210, 0.2);
+    background-image: url(../images/lineas.png);
+}
+
+.color {
+  flex-direction: row;
+
+  }
+
+/* ----------- SECTION:NPRODUCTSTABLET----------- */
+
+/* ----------- SECTION:FOOTERTABLET----------- */
+
+#footer {
+    flex-direction: row;}
+
+  .comprar {
+      width: 30%;
+      margin: 0 auto;
+    }
+
+    .colores   {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+
+}
+
+
+/* ----------- DISPOSITIVOSMOBILE  ------------ */
+
+
+
+@media (min-width: 992px) {
+/* ----------- SECTION:FULLSLIDERDESKTOP ------------ */
+
+
+/* ----------- SECTION:FULLSLIDERDESKTOP ------------ */
+
+/* ----------- SECTION:NFILODESKTOP ------------ */
+.flex_cen_cen_full {
+    flex-direction: row;
+}
+
+.flex_cen_cen_full div{
+    width: 100%;
+}
+
+.textonfilonhistorias {
+    padding-left: 20%;
+}
+
+.textonfilonhistorias h4 {
+    color: rgba(200, 200, 200);
+    weight: 100;
+}
+
+/* ----------- SECTION:NFILODESKTOP  ------------ */
+
+/* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
+
+.containergrid {
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    grid-template-rows: repeat (3, 1fr);
+    height: 600px;
+}
+
+.titular .btn_form {
+    flex-grow: 0;
+}
+
+
+#txtnumbers {
+    order: 4;
+}
+
+#txticons {
+    order: 2;
+}
+
+#imgicons{
+    order: 5;
+}
+
+#imgabc{
+    order: 3;
+}
+
+#txtabc{
+    order: 6;
+}
+
+/* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
+.containerproducto {
+  flex-direction: row;
+  margin: 0 auto;
+  width:80%;
+  padding-top: 5%;
+  align-items: center;
+}
+
+
+
+
+}
+}

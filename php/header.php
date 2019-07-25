@@ -10,7 +10,7 @@
                     <a class="nav-link" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="proximo.php">PRODUCTOS</a>
+                    <a class="nav-link" href="productos.php">PRODUCTOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="proximo.php">NOSOTROS</a>
