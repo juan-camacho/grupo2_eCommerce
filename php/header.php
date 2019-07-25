@@ -24,7 +24,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="Ingreso.php">LOGIN</a>
+                <a class="nav-link" href="ingreso.php">INGRESA</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="register.php">REGISTRATE</a>

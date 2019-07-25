@@ -3,10 +3,7 @@
 <html lang="es">
 <?php require_once("php/head.php") ?>
   <body>
-
       <?php require_once("php/header.php") ?>
-
-
        <!-- Perfil  -->
        <div class="formularios" style="padding-top: 7rem;">
             <div class="formulario_ap">

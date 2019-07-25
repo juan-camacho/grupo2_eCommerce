@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <!-- NFILO  -->]
+        <!-- NFILO  -->
         <section class="nfilonhistorias">
             <div class="flex_cen_cen_full" id="fondogrisclaro">
                   <div class="">
@@ -76,7 +76,7 @@
           </div>
         </section>
 
-        <!-- NHISTORIAS  -->]
+        <!-- NHISTORIAS  -->
         <section class="nfilonhistorias" id="fondogrisoscuro">
             <div class="flex_cen_cen_full">
                 <div class="">
