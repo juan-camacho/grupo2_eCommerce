@@ -1,0 +1,19 @@
+Primera entrega sprint 11/7/2019
+
+Para todas las ramas (obligatorias para el 1er Sprint)
+
+    Home
+    F.A.Q. - Preguntas frecuentes
+    Formulario de Registro
+    Formulario de Login
+    Formulario de Contacto
+    Perfil de Usuario
+    ----------------------------------------
+Segunda entrega sprint 25/7/2019
+
+Para el Catálogo de Productos (destacados - opcionales)
+
+    Vista de listado de productos
+    Vista del detalle de un producto
+    Vista del carrito de compra
+    ----------------------------------------
