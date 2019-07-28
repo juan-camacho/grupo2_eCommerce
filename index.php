@@ -1,13 +1,10 @@
 <?php $tittle = "Tienda Babuino - Home"?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/head.php")?>
-
-  <body>
-    <?php require_once("php/header.php"); ?>
-
-
-    <main>
+<?php require_once("php/mod/head.php")?>
+<body>
+<?php require_once("php/mod/header.php")?>
+<main>
                   <!-- FULLSLIDER -->
                   <div class="fullslider">
                       <div class="">
@@ -16,7 +13,7 @@
                       </div>
                   </div>
 
-                  <!-- NFILO  -->]
+                  <!-- NFILO  -->
                   <section class="nfilonhistorias">
                       <div class="flex_cen_cen_full" id="fondogrisclaro">
                             <div class="">
@@ -78,7 +75,7 @@
                     </div>
                   </section>
 
-                  <!-- NHISTORIAS  -->]
+                  <!-- NHISTORIAS  -->
                   <section class="nfilonhistorias" id="fondogrisoscuro">
                       <div class="flex_cen_cen_full">
                           <div class="">
@@ -92,10 +89,9 @@
                               </div>
                           </div>
                       </div>
-                  </section>
-
-              </main>
+                    </section>
+</main>
 <!-- Footer -->
-<?php require_once("php/footer.php") ?>
+<?php require_once("php/mod/footer.php") ?>
   </body>
 </html>

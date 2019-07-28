@@ -1,9 +1,9 @@
 <?php $tittle = "Tienda Babuino - Perfil Del Usuario" ?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/head.php") ?>
+<?php require_once("php/mod/head.php") ?>
   <body>
-      <?php require_once("php/header.php") ?>
+      <?php require_once("php/mod/header.php") ?>
        <!-- Perfil  -->
        <div class="formularios" style="padding-top: 7rem;">
             <div class="formulario_ap">
@@ -54,6 +54,6 @@
         </div>
 
     <!-- Footer -->
-    <?php require_once("php/footer.php") ?>
+    <?php require_once("php/mod/footer.php") ?>
   </body>
 </html>

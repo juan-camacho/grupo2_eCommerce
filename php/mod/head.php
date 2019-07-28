@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/23840b815f.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylesdepurado.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title><?php echo $tittle ?></title>
 </head>

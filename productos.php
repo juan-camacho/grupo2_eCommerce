@@ -1,15 +1,9 @@
 <?php $tittle = "Tienda Babuino - productos"?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/head.php")?>
-<head>
-  <link rel="stylesheet" href="css/stylesaldi.css">
-</head>
-
+<?php require_once("php/mod/head.php")?>
   <body>
-    <?php require_once("php/header.php"); ?>
-
-
+    <?php require_once("php/mod/header.php"); ?>
               <main>
                       <!-- FULLSLIDER -->
                       <div class="fullslider-productos">
@@ -130,7 +124,7 @@
 
                     </section>
               </main>
-<?php require_once("php/footer.php") ?>
+<?php require_once("php/mod/footer.php") ?>
       </div>
   </body>
 </html>

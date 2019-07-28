@@ -1,9 +1,9 @@
 <?php $tittle = "Tienda Babuino - Ingresar" ?>
 <!DOCTYPE html>
 <html lang="es">
-    <?php require_once("php/head.php") ?>
+    <?php require_once("php/mod/head.php") ?>
     <body>
-        <?php require_once("php/header.php") ?>
+        <?php require_once("php/mod/header.php") ?>
        <section class="formularios" style="padding-top: 7rem;">
 
           <form action="" class="formulario_ap">
@@ -33,6 +33,6 @@
 
 
               <!-- Footer -->
-    <?php require_once("php/footer.php") ?>
+    <?php require_once("php/mod/footer.php") ?>
     </body>
 </html>
