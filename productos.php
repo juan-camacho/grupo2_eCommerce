@@ -12,9 +12,11 @@
                               <h1> LA </br> TIENDA </h1>
                           </div>
                       </div>
-
+                <!-- FILTROS -->
                <h4 class="titulo_producto"> ORDENAR POR</h4>
 
+
+               <!-- PRODUCTOS-->
                <section class="listado_productos">
                     <article class="producto">
                        <div class="img_producto">
