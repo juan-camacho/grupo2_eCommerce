@@ -6,12 +6,12 @@
     <?php require_once("php/mod/header.php"); ?>
               <main>
                       <!-- FULLSLIDER -->
-                      <div class="fullslider-productos">
-
-                                      <h3 class="tienda"> LA TIENDA </h3>
-
-
-                        </div>
+                      <div class="fullslider"  id="fsproductos" >>
+                          <div class="divtitulo">
+                              <h4> Babuino SHOP </h4>
+                              <h1> LA </br> TIENDA </h1>
+                          </div>
+                      </div>
 
                <h4 class="titulo_producto"> ORDENAR POR</h4>
 

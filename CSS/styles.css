@@ -20,9 +20,9 @@ body {
 }
 
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5rem;
-    text-transform: uppercase;
+    font-weight: 500;
 }
 
 h2 {
@@ -50,6 +50,10 @@ p {
     text-align: justify;
 }
 
+bold {
+    font-weight: 700 !important;
+
+    }
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 
@@ -68,6 +72,11 @@ p {
 .turquesa {
     color: #33CC99;
 }
+
+.fondogrisclaro {
+    background-color:  rgba(246,246,246)
+}
+
 /* ---- FIN DE GENERALES ----- */
 
 /* Header - USA CLASES DE BOOTSTRAP*/
@@ -77,7 +86,7 @@ header {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, .8) ;
+    background-color: rgba(255, 255, 255, .6) ;
     padding: 1em 0 !important;
 }
 
@@ -137,7 +146,7 @@ header span i:hover  {
     text-align: center;
     border-radius: 2px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", "sans-serif";
 }
 
 .btn_form:hover{
@@ -150,7 +159,6 @@ header span i:hover  {
 /* ----------- FULLSLIDER HOME ------------ */
 
 .fullslider {
-    background: url(../images/banner.jpeg) no-repeat fixed center;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -158,18 +166,37 @@ header span i:hover  {
     justify-content: center;
     align-items: center;
 }
-.fullslider div {
+
+#fshome {
+    background: url(../images/banner.jpeg) no-repeat fixed center;
+}
+
+#fsproductos {
+    background: url(../images/pattern1.png) no-repeat fixed center;
+    background-color: #33CC99;
+}
+
+#fsfaqs {
+    background: url(../images/pattern1.png) no-repeat fixed center;
+    background-color:#FCADA5;
+}
+
+
+
+
+.divtitulo {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-left: 10%;
     text-align: left;
     text-transform: uppercase;
-    color: white;
 }
 
-.fullslider div h3 {
+.divtitulo h4 {
     align-self: flex-start;
+    font-weight: 200;
+
 }
 
 /* ----------- SECTION:NFILO ------------ */
@@ -204,24 +231,6 @@ header span i:hover  {
 
 
 /* ----------- SECTION:NPRODUCTS ------------ */
-.fullslider-productos {
-    background: url(../images/nuestrafilosofia.jpeg); /* no-repeat fixed center; */
-    background-size: cover;
-    background-position: center center;
-    height: 60vh;
-    min-height: 150px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-
-}
-.fullslider-productos h3 {
-    padding-top: 15rem;
-    margin-left: 2rem;
-    font-size: 4rem;
-    color: #fff;
 
 }
 .listado_productos {
@@ -280,7 +289,7 @@ header span i:hover  {
 }
 
 #imgnumbers {
-    background-image: url(images/babuinonumbers.png);
+    background-image: url(../images/babuinonumbers.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -510,34 +519,44 @@ perfil de usuario AS - 09.07.2019
 
 
 
-
 /* ----------- SECTION:FOOTER----------- */
+
+
 #footer {
+    background: #33FFCC;
     flex-direction: column;
-    border: 1px solid grey;
+
 }
+
+.flexspacebetweenfooter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247,247,247);
+    flex: 3;
+    color: rgba(41,41,41);
+}
+
+.flexstart {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex: 1;
+}
+
 
 .partefooter {
-    width:100%;
-    background-color: rgba(255, 255, 255, .8);
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-#imgfooter {
-    background-color: #33FFCC;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
+    border: 1px solid white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
-#imgfooter img {
-    height: 60px;
+.flexstart img {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-
 
 
 /* ----------- SECTION:FOOTER----------- */
@@ -641,7 +660,7 @@ perfil de usuario AS - 09.07.2019
 
 .titulo h3 {
     text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .titulo h4 {
@@ -652,7 +671,7 @@ perfil de usuario AS - 09.07.2019
 .precio {
     flex-grow: 1;
     text-align: right;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 
@@ -769,11 +788,36 @@ perfil de usuario AS - 09.07.2019
 
     /* ----------- SECTION:NPRODUCTSTABLET----------- */
 
+
     /* ----------- SECTION:FOOTERTABLET----------- */
 
+
     #footer {
+        background: #33FFCC;
         flex-direction: row;
+
     }
+
+    .flexspacebetweenfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 3;
+    }
+
+    .partefooter {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .flexstart img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .comprar {
         width: 30%;
         margin: 0 auto;
@@ -989,61 +1033,6 @@ h3.tienda {
     color: red;
     font-size: 1.4rem;
 }
-/*------------------- footer provicional------------------------*/
-footer {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E6E6E6;
-    margin-top: 10px;
-}
-
-.footerparte {
-    display:flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 300px;
-    padding-left: 5%;
-}
-
-.algo {
-    width: 100%;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.footerparte img {
-    width: 300px;
-}
-
-
-.footerparte i {
-    font-size: 1.5rem;
-}
-
-
-.footerparte:nth-child(3) {
-    background-color: #33CC99;
-    margin-top: 0;
-}
-
-.footerparte:nth-child(2) {
-    display: none;
-}
-@media (min-width: 600px) {
-    footer {
-        display:flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .footerparte:nth-child(2) {
-        display: flex;
-    }
-
 
     .usuario {
         flex-direction: column;
@@ -1066,127 +1055,5 @@ footer {
         text-align: center;
     }
 }
-@media (min-width:321px) and (max-width:800px) {
 
-    .main_footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color:#E6E6E6;
-    }
-    .social_footer_1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-    .social_footer_1 a {
-        display: inline-block;
-        text-decoration: none;
-        color: #282C34;
-    }
-    .social_footer_1 a i {
-        font-size: 2rem;
-        margin: 1rem;
-    }
-
-    .txt_footer {
-        margin-top: 0;
-        text-align: center;
-
-    }
-    .img-footer .proximo{
-        margin-top: 1.8rem;
-        width: 100%;
-        text-align: center;
-    }
-}
-@media (min-width: 801px) {
-    .main-footer{
-        background-color:  #33CC99;
-        display: flex;
-    }
-
-    .footer1 {
-        display:flex;
-        width:33vw;
-        border: 1px solid white;
-    }
-
-
-
-    .nuestraslineas {
-        display: flex;
-        flex-direction: row;
-        background-color: pink;
-    }
-
-
-    .linea {
-        border: 1px solid white;
-        width: 100%;
-        height: 100%;
-        display:flex;
-        flex-direction: column;
-
-    }
-
-    .lineatexto {
-        height: 50%;
-    }
-
-    .lineatexto2 {
-        background-color: #E6E6E6;
-        border: 1px solid white;
-        width:  100%;
-        height:  100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: justify;
-        padding: 30px;
-        font-size: 1.2rem;
-        font-weight: 100;
-        height: 50%;
-        line-height: 80%;
-    }
-
-    .main_footer {
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        background-color:#E6E6E6;
-        flex-wrap: wrap;
-    }
-    .social_footer_1{
-        flex-basis: 100%;
-        margin: 0 auto;
-        flex-direction: row;
-        justify-content: center;
-
-
-    }
-    .social_footer_1a {
-        display: inline;
-        text-decoration: none;
-        color: #282C34;
-
-    }
-    .social_footer_1 a i {
-        font-size: 2rem;
-        margin: 1rem;
-    }
-
-    .txt_footer {
-        text-align: left;
-        margin-left: 2rem;
-
-    }
-    .img-footer {
-        padding:0;
-        margin-top: 1.8rem;
-        text-align: center;
-        width: auto;
-    }
 }

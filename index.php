@@ -1,5 +1,4 @@
 <?php $tittle = "Tienda Babuino - Home"?>
-<?php require_once("php/funciones/ingresousuario.php") ?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php")?>
@@ -7,10 +6,10 @@
 <?php require_once("php/mod/header.php")?>
 <main>
                   <!-- FULLSLIDER -->
-                  <div class="fullslider">
-                      <div class="">
-                          <h3> Cubos de madera </h3>
-                          <h1> Juguetes </br> didaticos </h1>
+                  <div class="fullslider" id="fshome">
+                      <div class="divtitulo white">
+                          <h4> Cubos de madera </h4>
+                          <h1> Juguetes </br> didacticos </h1>
                       </div>
                   </div>
 

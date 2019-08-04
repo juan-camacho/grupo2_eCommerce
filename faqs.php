@@ -5,6 +5,14 @@
 <body>
 <?php require_once("php/mod/header.php")?>
         <!-- FAQS  -->
+
+        <div class="fullslider"  id="fsfaqs" >>
+            <div class="divtitulo">
+                <h4> Todo lo que tenes que saber </h4>
+                <h1> FAQS </h1>
+            </div>
+        </div>
+
         <section class="nproducts">
             <div class="titular">
                 <h3> PREGUNTAS FRECUENTES </h3>
