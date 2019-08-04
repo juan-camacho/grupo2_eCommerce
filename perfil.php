@@ -10,7 +10,7 @@
                 <div class="avatar threed ">
 
                 </div>
-                <h3>Nombre Usuario</h3>
+                <h3> <?php echo $nombre ?> </h3>
 
 
             <a href="register.php"><button type="button" name="button" class="btn_form"> Editar Perfil </button></a>

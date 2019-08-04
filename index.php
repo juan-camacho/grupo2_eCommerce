@@ -1,4 +1,5 @@
 <?php $tittle = "Tienda Babuino - Home"?>
+<?php require_once("php/funciones/ingresousuario.php") ?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php")?>
