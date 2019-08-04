@@ -1,9 +1,9 @@
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=movies_db', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=BABUINO', 'root', '');
 
     /*$stmt = $pdo->prepare('select *from actors');*/
-    $stmt = $pdo->prepare('select * from actors where rating > :rating');
+    $stmt = $pdo->prepare('INSERT into users VALUE (null, 'JUAN@JUAN.com', 123, 'juan', 'camacho')');
 
     $stmt->bindValue('rating', 7);
 
