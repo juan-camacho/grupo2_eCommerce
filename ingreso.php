@@ -3,7 +3,6 @@
 <html lang="es">
     <?php require_once("php/mod/head.php") ?>
     <body>
-        <?php require_once("php/mod/header.php") ?>
        <section class="formularios" style="padding-top: 7rem;">
 
           <form action="" class="formulario_ap">

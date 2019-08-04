@@ -74,7 +74,11 @@ bold {
 }
 
 .fondogrisclaro {
-    background-color:  rgba(246,246,246)
+    background-color:  rgba(246,246,246);
+}
+
+.gris {
+    color: rgba(246,246,246);
 }
 
 /* ---- FIN DE GENERALES ----- */
@@ -181,6 +185,18 @@ header span i:hover  {
     background-color:#FCADA5;
 }
 
+#fsnosotros {
+    background: url(../images/pattern1.png) no-repeat fixed center;
+    background-color:rgba(246,246,246);
+}
+
+
+#fscontacto {
+    background: url(../images/pattern1blanco.png) no-repeat fixed center;
+    background-color: rgba(40, 44, 52);
+}
+
+
 
 
 
@@ -196,7 +212,11 @@ header span i:hover  {
 .divtitulo h4 {
     align-self: flex-start;
     font-weight: 200;
+}
 
+.divtitulo h1 {
+    align-self: flex-start;
+    text-align: left;
 }
 
 /* ----------- SECTION:NFILO ------------ */
@@ -896,35 +916,28 @@ perfil de usuario AS - 09.07.2019
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
-.formularios {
-    background: url(../images/benito.jpg);
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
-    min-width: 300px;;
-    margin-bottom: 2rem;
-    padding: 2rem;
+
+.formulario_ap {
+    background: #E6E6E6;
+    padding:1rem;
+    margin-right: 2rem;
 }
+
 .contenedor_ap {
     width: 90%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0 auto;
 }
-.formulario_ap h2 {
+
+
+.formulario_ap h4 {
     text-align: center;
-    font-size: 2.2rem;
-    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
-.formulario_ap {
-    background: #E6E6E6;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 6rem;
-    padding:1rem;
-    border-radius: 15px;
-    margin-right: 2rem;
-}
+
+
 input[type="text"], input[type="password"] {
     background-color: #E6E6E6;
     font-size: 1rem;
@@ -932,6 +945,7 @@ input[type="text"], input[type="password"] {
     padding:10px;
     border: none;
 }
+
 .input_contenedor_ap {
     margin-bottom:1.4rem;
     border: solid 0.1rem #aaa;
@@ -960,9 +974,7 @@ a.link {
 }
 @media (min-width: 768px) {
     .formulario_ap {
-        margin: auto;
-        width: 500px;
-        border-radius: 15px;
+        width: 100%;
     }
 }
 /* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
