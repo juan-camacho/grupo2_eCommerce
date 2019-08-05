@@ -29,8 +29,8 @@
                            <p>Contenido Articulo</p>
                            <p class="precio"> $200</p>
                        </div>
-
                     </article>
+
                     <article class="producto">
                         <div class="img_producto">
                             <img src="images/abcdario.jpeg" alt="ABC">

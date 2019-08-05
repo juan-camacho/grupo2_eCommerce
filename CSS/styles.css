@@ -269,7 +269,7 @@ header span i:hover  {
 }
 .listado_productos {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 }
 .producto {
     display: flex;
@@ -1025,10 +1025,12 @@ h3.tienda {
     margin-bottom: 2rem;
     margin-left: 2rem;
 }
+
 .listado_productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 80%;
 }
 
 .producto {
@@ -1041,8 +1043,8 @@ h3.tienda {
     padding-bottom: 4rem;
     background-color:rgba(255, 255, 255, .8);
     border:solid 0.6px;
-    border-radius: 5%;
 }
+
 .producto img {
     max-width: 320px;
     border-radius: 5%;
