@@ -54,6 +54,20 @@ bold {
     font-weight: 700 !important;
 
     }
+
+.btn {
+    border-radius: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: #33CC99;
+
+    }
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 
@@ -908,63 +922,86 @@ perfil de usuario AS - 09.07.2019
         background-size:cover;
         height: 100vh;
         } */
+
 .threed:hover{
     box-shadow:
-    1px 1px #53a7ea,
-    2px 2px #53a7ea,
-    3px 3px #53a7ea;
+    1px 1px #aaa,
+    2px 2px #aaa,
+    3px 3px #aaa;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
 
-.formulario_ap {
+
+.modal-content {
     background: #E6E6E6;
-    padding:1rem;
-    margin-right: 2rem;
+    padding:2rem;
+    text-align: center;
 }
+
 
 .contenedor_ap {
-    width: 90%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
 }
 
-
-.formulario_ap h4 {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.modal-content h2  {
+    text-transform: uppercase;
+    weight: 200;
 }
-
 
 input[type="text"], input[type="password"] {
     background-color: #E6E6E6;
     font-size: 1rem;
-    width: 80%;
     padding:10px;
     border: none;
+    width: 100%;
+    transform: none;
 }
 
 .input_contenedor_ap {
-    margin-bottom:1.4rem;
+    margin-bottom:0.7rem;
+    margin-top:0.7rem;
     border: solid 0.1rem #aaa;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
+
+.divformu {
+    margin-top:0.7rem;
+    margin-bottom:0.7rem;
+    width: 100%;
+}
+
+
+#olvidastecontra {
+    text-align: right;
+}
+
+#recuerdame {
+    text-transform: uppercase;
+}
+
+
+.divformu button {
+  width: 100%;
+}
+
+.divformu span {
+
+}
+
+
 .icon {
     min-width: 40px;
     color: #999;
     text-align: center;
 }
-.btn_form {
-    border: none;
-    width: 100%;
-    color:#fff;
-    font-size: 1.4rem;
-    background-color: aquamarine;
-    padding: 15px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-}
+
 form p {
     text-align: center;
 }
@@ -972,6 +1009,7 @@ a.link {
     font-weight: 600;
     text-decoration: none;
 }
+
 @media (min-width: 768px) {
     .formulario_ap {
         width: 100%;
