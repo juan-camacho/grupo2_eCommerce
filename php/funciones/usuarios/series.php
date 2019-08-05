@@ -1,7 +1,7 @@
 <?php
 include("../funciones.php");
 $pdo = get_connection();
-$stmt = $pdo->prepare('SELECT * FROM series');
+$stmt = $pdo->prepare('SELECT * FROM users');
 $stmt->execute();
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
  ?>
