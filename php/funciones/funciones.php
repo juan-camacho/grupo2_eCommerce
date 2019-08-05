@@ -1,3 +1,5 @@
 <?php
-print_r($_POST);
+$email= $_POST['email'];
+$nombre = $_POST['nombre'];
+$password = $_POST['password'];
  ?>

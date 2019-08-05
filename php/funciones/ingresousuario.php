@@ -1,7 +1,7 @@
 <?php
-$email= $_POST['UserEmail'];
-$nombre = $_POST['UserFirstName'];
-$password = $_POST['UserPassword'];
+$email= $_POST['email'];
+$nombre = $_POST['nombre'];
+$password = $_POST['password'];
 $error = null;
 if (strlen($nombre) <> 0)
 {
