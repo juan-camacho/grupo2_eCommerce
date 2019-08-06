@@ -302,17 +302,21 @@ header span i:hover  {
 
 .cardproductotexto {
 text-align: center;
-padding: 1rem;
+padding-top: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
 overflow:hidden;
 }
 
 .cardproductotexto p {
 text-align: center;
 margin-bottom: 0;
+padding-bottom: 1rem;
 }
 
 .cardproductotexto span {
-font-weight: bold;
+font-weight: 500;
+
 }
 
 .precio {
@@ -1058,7 +1062,7 @@ h3.tienda {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -1066,12 +1070,14 @@ h3.tienda {
     flex-basis:200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding-bottom: 4rem;
     background-color:rgba(255, 255, 255, .8);
-    border:solid 0.6px;
 }
+
+.producto:hover {
+  box-shadow: 0 0 2px rgba(33,33,33,.2);
+}
+
+
 
 .producto img {
     max-width: 320px;
