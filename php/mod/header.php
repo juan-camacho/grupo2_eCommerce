@@ -27,7 +27,7 @@
                 <a class="nav-link" data-toggle="modal" data-target="#loginModal">INGRESA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="register.php">REGISTRATE</a>
+                <a class="nav-link" data-toggle="modal" data-target="#registerModal">REGISTRATE</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -37,5 +37,6 @@
 
     </nav>
     <?php require_once("ingreso.php")?>
+    <?php require_once("register2.php")?>
 
 </header>

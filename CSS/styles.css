@@ -267,10 +267,16 @@ header span i:hover  {
 /* ----------- SECTION:NPRODUCTS ------------ */
 
 }
+
+.containterlistproductos {
+    display: flex;
+    width: 80%;
+}
 .listado_productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .producto {
     display: flex;
     flex-direction: column;
@@ -1007,6 +1013,7 @@ input[type="text"], input[type="password"] {
     margin-top:0.7rem;
     margin-bottom:0.7rem;
     width: 100%;
+    font-size: 1rem;
 }
 
 
@@ -1019,8 +1026,10 @@ input[type="text"], input[type="password"] {
 }
 
 
+
 .divformu button {
   width: 100%;
+  margin-top: 10px;
 }
 
 .divformu span {
@@ -1040,6 +1049,11 @@ form p {
 a.link {
     font-weight: 600;
     text-decoration: none;
+}
+
+
+.contenedor_ap button {
+    margin-top: 15px;
 }
 
 @media (min-width: 768px) {
