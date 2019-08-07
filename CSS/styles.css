@@ -49,6 +49,9 @@ h6 {
 p {
     text-align: justify;
 }
+.error {
+    color: #FF0000;
+}
 
 bold {
     font-weight: 700 !important;

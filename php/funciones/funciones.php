@@ -1,11 +1,17 @@
 <?php
-$error = '';
+$errornombre = '';
+$errorapellido = '';
+$erroremail = '';
+$errorcontraseña = '';
+$errorcontraseña2 = '';
 $verificacion = '';
 $contraseña = '';
 if (isset($_POST['submit'])) {
     $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
     $email= $_POST['email'];
     $password = $_POST['password'];
+    $password2 = $_POST['password2'];
     if (!empty($nombre)) {
         $nombre = trim($nombre);
         $nombre = htmlspecialchars($nombre);
@@ -13,12 +19,21 @@ if (isset($_POST['submit'])) {
         $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
     }
     else {
-        $error .= 'por favor agrega un nombre <br />';
+        $errornombre .= 'por favor agrega un nombre <br />';
+    }
+    if (!empty($apellido)) {
+        $apellido = trim($apellido);
+        $apellido = htmlspecialchars($apellido);
+        $apellido = stripslashes($apellido);
+        $apellido = filter_var($apellido, FILTER_SANITIZE_STRING);
+    }
+    else {
+        $errorapellido .= 'por favor agrega un apellido <br />';
     }
     if (!empty($email)) {
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
         if (!filter_var($email, FILTER_SANITIZE_EMAIL)) {
-            $error .= 'Por favor ingresa un correo valido <br />';
+            $erroremail .= 'Por favor ingresa un correo valido <br />';
         }
         else {
             $verificacion = $email;
@@ -32,7 +47,15 @@ if (isset($_POST['submit'])) {
             $contraseña = "contraseña cumple los requisitos";
         }
         else {
-        $error .= "introduzca alguna contraseña valida";
+        $errorcontraseña .= "introduzca alguna contraseña valida";
+        }
+    }
+    if (!empty($password2)) {
+        if ($password == $password2) {
+          $contraseña2 = "coinciden las contraseñas";
+        }
+        else {
+        $errorcontraseña2 .= "introduzca contraseña iguales";
         }
     }
 }
