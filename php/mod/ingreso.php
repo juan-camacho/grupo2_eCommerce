@@ -15,7 +15,7 @@
                 <div class="divformu" id="olvidastecontra">
                     <span>Olvidaste tu contrasena?</span>
                 </div>
-                    <button class="btn btn-dark" type="submit" name="submit"  data-toggle="modal" data-target="#loginModalok">Ingresa</button>
+                    <button class="btn btn-dark" type="submit" name="submit">Ingresa</button>
                 <div class="divformu" id="recuerdame">
                     <label>
                         <input type="checkbox" checked="checked" name="recuerdame"> Recuerdame!
@@ -25,5 +25,3 @@
         </div>
     </div>
 </div>
-
-<?php require_once("usuariook.php")?>

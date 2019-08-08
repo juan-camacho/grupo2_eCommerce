@@ -35,4 +35,5 @@ else {
     $error = "introduzca algun Usuario";
     echo $error;
 }
+data-toggle="modal" data-target="#loginModalok"
 ?>

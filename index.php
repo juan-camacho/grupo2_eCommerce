@@ -84,7 +84,7 @@
                           <div class="">
                               <div class="textonfilonhistorias" id="textohistorias">
                                   <h3 class="white"> MATEO </h3>
-                                  <h4 class="turquesa"> 2 ANOS </h4>
+                                  <h4 class="turquesa"> 2 AÑOS </h4>
                                   <p class="white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                               </div>
                           </div>
