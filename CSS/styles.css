@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -38,10 +39,12 @@ h2 {
 
 h3 {
     font-size: 2.75rem;
+    font-weight: 400;
 }
 
 h4 {
     font-size: 1.75rem;
+    font-weight: 300;
 }
 
 h5 {
@@ -263,7 +266,7 @@ header span i:hover  {
     width: 100%;
 }
 
-.nfilonhistorias .btn_form {
+.nfilonhistorias .btn {
     width: 40%;
     height: 50px;
     text-transform: uppercase;
@@ -274,10 +277,101 @@ header span i:hover  {
 
 /* ----------- SECTION:NPRODUCTS ------------ */
 
-#containerproductos {
- width:80%;
+#containerproducto {
+ width:100%;
  margin-top: 5rem;
+ margin-bottom: 5rem;
 }
+
+#containerproductos {
+ width:100%;
+ margin-top: 5rem;
+ margin-bottom: 5rem;
+}
+
+.carousel {
+  width: 100%;
+
+  }
+/* ----------- SECTION:NPRODUCTS - RESPONSIVE CARDS ------------ */
+
+/* ----------- SECTION:NPRODUCTS - FILTROS ------------ */
+.accordion {
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 2rem;
+}
+.botonfiltros  {
+    all:unset;
+    }
+
+.botonfiltros  {
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+
+.botonfiltros:hover {
+    color: #33CC99;
+}
+
+.card-body {
+    font-weight: 300;
+}
+
+
+.widget-body ul {
+    text-align: left;
+    margin-left: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color:  #33CC99;
+    border: 0px;
+}
+
+
+
+#colores {
+    padding-left: 4rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+.widget {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-right: 1px #33CC99 solid;
+    border-left: 1px #33CC99 solid;
+
+}
+
+.thumb {
+    border-radius: 50% 50% 50% 0 !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin-left: -15px !important;
+    top: -20px !important;
+    left: 50%;
+}
+
+input[type=range] + .thumb .value {
+    color: #fff;
+    margin-left: -1px;
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+
 
 /* ----------- SECTION:NPRODUCTS - RESPONSIVE CARDS ------------ */
 
@@ -286,7 +380,12 @@ header span i:hover  {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
-    }
+}
+
+.widget {
+    border: 0;
+}
+
 }
 
 @media (min-width: 48em) {
@@ -294,6 +393,18 @@ header span i:hover  {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
+    }
+
+    #containerproducto {
+     width:80%;
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+    }
+
+    #containerproductos {
+     width:80%;
+     margin-top: 5rem;
+     margin-bottom: 5rem;
     }
 }
 
@@ -319,14 +430,23 @@ header span i:hover  {
 .card {
     border-radius: 0;
     margin: 0;
-    border: 0;
 }
 
+.text-center {
+    border: 0;
+
+}
 .card:hover {
+
       animation-duration: 0.25s;
-      transform: scale(1.02);
-      animation-duration: 0.25s;
+       box-shadow: 0 0 3px rgba(33,33,33,.2);
     }
+
+    .txt-producto:hover {
+    font-weight: 300;
+
+        }
+
 
 .containterlistproductos {
     display: flex;
@@ -347,23 +467,26 @@ header span i:hover  {
 .producto img {
     max-width: 50%;
 }
+
 .txt-producto{
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    text-align: center;
+    font-weight: 200;
+    border: 0;
 }
 
 .categoria {
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1.5rem;
 }
 
 .cantycolores {
     font-size: 1.2rem;
+
     }
 
 .cardproductotexto {
@@ -451,9 +574,7 @@ font-size: 1.5rem;
 .nproducts {
     margin-bottom: 2rem;
 }
-.titular .btn_form {
-    display:none;
-}
+
 #txticons, #txtnumbers, #txtabc {
     display: none;
 }
@@ -830,20 +951,17 @@ perfil de usuario AS - 09.07.2019
 
 .titulo h3 {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+
 }
+
 
 .titulo h4 {
     color: grey;
     font-size: 1.4rem;
+    font-weight: 300;
 }
 
-.precio {
-    flex-grow: 1;
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-}
+
 
 .descripcionprod {
     padding-top: 40px;
@@ -884,6 +1002,8 @@ perfil de usuario AS - 09.07.2019
     display: flex;
     align-items: center;
     flex-direction: column;
+
+
 }
 
 .color {
@@ -1015,7 +1135,7 @@ perfil de usuario AS - 09.07.2019
     }
     .textonfilonhistorias h4 {
         color: rgba(200, 200, 200);
-        weight: 100;
+
     }
     /* ----------- SECTION:NFILODESKTOP  ------------ */
     /* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
@@ -1088,7 +1208,7 @@ perfil de usuario AS - 09.07.2019
     weight: 200;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"]{
     background-color: #E6E6E6;
     font-size: 1rem;
     padding:10px;
@@ -1098,8 +1218,8 @@ input[type="text"], input[type="password"] {
 }
 
 .input_contenedor_ap {
-    margin-bottom:0.7rem;
-    margin-top:0.7rem;
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
     border: solid 0.1rem #aaa;
     display: flex;
     justify-content: flex-start;
@@ -1122,7 +1242,6 @@ input[type="text"], input[type="password"] {
 #recuerdame {
     text-transform: uppercase;
 }
-
 
 
 .divformu button {

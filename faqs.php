@@ -16,7 +16,6 @@
         <section class="nproducts">
             <div class="titular">
                 <h3> PREGUNTAS FRECUENTES </h3>
-                <button type="button" name="button" class="btn_form"> todos los productos </button>
             </div>
               <div class="containergrid">
               <div id="faqs_1">
