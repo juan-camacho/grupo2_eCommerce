@@ -1,5 +1,4 @@
 <div class="modal dialog" tabindex="-1" role="dialog" id="registerModal">
-    <?php require_once("php/funciones/funciones.php"); ?>
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <h2>REGISTRO</h2>
