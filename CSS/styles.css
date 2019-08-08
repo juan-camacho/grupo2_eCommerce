@@ -13,6 +13,12 @@ a {
     color: inherit;
 }
 
+a:hover {
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     border: none;
@@ -69,7 +75,6 @@ bold {
 
 .btn:hover {
     background-color: #33CC99;
-
     }
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 /* ---- TIPOS DE FLEX GENERALES  ----- */
@@ -269,7 +274,59 @@ header span i:hover  {
 
 /* ----------- SECTION:NPRODUCTS ------------ */
 
+#containerproductos {
+ width:80%;
+ margin-top: 5rem;
 }
+
+/* ----------- SECTION:NPRODUCTS - RESPONSIVE CARDS ------------ */
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 80em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+}
+
+
+.card {
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+}
+
+.card:hover {
+      animation-duration: 0.25s;
+      transform: scale(1.02);
+      animation-duration: 0.25s;
+    }
 
 .containterlistproductos {
     display: flex;
@@ -311,26 +368,64 @@ header span i:hover  {
 
 .cardproductotexto {
 text-align: center;
-padding-top: 1rem;
-padding-left: 1rem;
-padding-right: 1rem;
+padding-top: 0.5rem;
 overflow:hidden;
 }
 
 .cardproductotexto p {
 text-align: center;
 margin-bottom: 0;
-padding-bottom: 1rem;
 }
 
 .cardproductotexto span {
 font-weight: 500;
+font-size: 1.5rem;
 
 }
 
 .precio {
     margin: 0 auto;
     font-size: 1.2rem;
+}
+
+.card-footer {
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+.precioybotones {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.float-right i {
+    color: grey;
+}
+
+#botonproductos {
+    width: 100%;
+    padding-top: 0.5rem;
+    margin: 0 aut0;
+}
+
+.fa-heart:hover {
+    transform: scale(1.2);
+    color:tomato;
+}
+
+.fa-share-alt:hover {
+    color:rgba(40, 44, 52);
+    transform: scale(1.2);
+
 }
 
 /* Fin SECTION: NPRODUCTS */
