@@ -3,7 +3,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.php"><img src="images/babuinologo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""><i class="fas fa-cubes"></i></span>
+            <span class=""><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">

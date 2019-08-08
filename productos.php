@@ -17,7 +17,7 @@
                     <div class="row" id="columnafiltros">
                         <div class="col-12 col-md-4 col-lg-2">
                             <div class="">
-                                <h4> ORDENAR </br>POR</h4>
+                                <h4> Filtrar </h4>
                             </div>
                             <div class="accordion" id="categoriasdeproducto">
                                 <div class="widget">
