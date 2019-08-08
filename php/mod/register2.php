@@ -48,6 +48,7 @@
                         <span>Ya estas registrado? </span> <a href="Ingreso.php" class="link"> Log in</a>
                     </div>
             </form>
+
         </div>
     </div>
 </div>
