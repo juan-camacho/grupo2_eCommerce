@@ -10,7 +10,7 @@
                    <input type="text" placeholder="nombre" name="nombre" value="<?php echo htmlspecialchars($nombre);?>">
                    <?php else : ?>
                        <i class="fas fa-user icon"></i>
-                    <input type="text" placeholder="Nombre" name="nombre" >
+                    <input type="text" placeholder="Nombre" name="nombre" required>
                 <?php endif; ?>
                </div>
                       <span class="error"> <?php if (!empty($errornombre)) {echo $errornombre; }?></span> <br>
@@ -20,7 +20,7 @@
                    <input type="text" placeholder="Apellido" name="apellido" value="<?php echo htmlspecialchars($apellido);?>">
                <?php else : ?>
                    <i class="fas fa-user icon"></i>
-                   <input type="text" placeholder="Apellido" name="apellido" >
+                   <input type="text" placeholder="Apellido" name="apellido" required>
                <?php endif; ?>
                </div>
                <span class="error"> <?php if (!empty($errorapellido)) {echo $errorapellido; } ?></span> <br>
@@ -30,13 +30,13 @@
                     <input type="email" placeholder="Email" name="email" value="<?php echo htmlspecialchars($email);?>">
                 <?php else: ?>
                     <i class="fas fa-envelope icon"></i>
-                    <input type="email" placeholder="Email" name="email" >
+                    <input type="email" placeholder="Email" name="email" required>
                 <?php endif; ?>
                 </div>
                 <span class="error"> <?php if (!empty($erroremail)) {echo $erroremail;} ?></span> <br>
                 <div class="input_contenedor_ap threed">
                     <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña" name="password" >
+                    <input type="password" placeholder="Contraseña" name="password" required>
                 </div>
                 <span class="error"> <?php if (!empty($errorcontraseña)) {echo $errorcontraseña;} ?></span> <br>
                 <div class="input_contenedor_ap threed">
