@@ -1,7 +1,7 @@
 <header>
   <?php require_once("php/funciones/funciones.php"); ?>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.php"><img src="images/babuinologo.png"></a>
+    <nav class="navbar fixed-top navbar-expand-lg nav-dark">
+        <a class="navbar-brand" href="index.php"><img src="images/logo_led_cob.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""><i class="fas fa-bars"></i></span>
         </button>
@@ -25,10 +25,10 @@
             </ul>
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#loginModal">INGRESA</a>
+                <a class="nav-link" href="ingreso.php">INGRESA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#registerModal">REGISTRATE</a>
+                <a class="nav-link" href="register.php">REGISTRATE</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -37,7 +37,5 @@
         </div>
 
     </nav>
-    <?php require_once("ingreso.php")?>
-    <?php require_once("register2.php")?>
 
 </header>

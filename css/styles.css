@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -21,13 +21,13 @@ a:hover {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: none;
-    color: #333;
+    color: black;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 5rem;
     font-weight: 500;
 }
@@ -57,7 +57,9 @@ h6 {
 
 p {
     text-align: justify;
+    font-weight: 200;
 }
+
 .error {
     color: #FF0000;
 }
@@ -73,12 +75,44 @@ bold {
     text-transform: uppercase;
     font-size: 1.2rem;
     border: none;
+    background-color: inherit;
+
 
 }
 
-.btn:hover {
-    background-color: #33CC99;
-    }
+.btn-fblanco{
+    border-radius: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+    background-color: inherit;
+}
+
+
+.btn-fnegro {
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+
+.btn-fnegro:hover {
+    border: none;
+    background-color: yellow;
+    color: black;
+}
+
+.btn-famarilloblanco{
+    color: white;
+    background-color: black;
+}
+
+.btn-famarilloblanco:hover {
+    background-color: inherit;
+    color: black;
+    border: 1px black solid;
+    font-weight: bold;
+}
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 
@@ -115,9 +149,15 @@ header {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, .6) ;
+    background-color: black ;
     padding: 1em 0 !important;
+    color: white;
 }
+
+.nav-link:hover {
+text-decoration: underline yellow ;
+    }
+
 
 .navbar-brand {
     position: absolute;
@@ -144,49 +184,45 @@ header span i  {
     color: black;
 }
 
-header span i:hover  {
-    color: #33CC99; /* FUNCIONA A MEDIAS */
-}
 
 .nav-item a i  {
     font-size: 1.5em;
 }
 
-.nav-item a i:hover  {
-    color: #33CC99;
+.nav-item:hover {
+    font-weight: bolder;
 }
-
-/* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
-#btn_can{
-    background-color: tomato;
-    color: white;
-}
-#btn_can:hover{
-    background-color: #282C34;
-    color: tomato;
-}
-.btn_form {
-    border: none;
-    width: 100%;
-    color:#fff;
-    font-size: 1rem;
-    background-color: #33CC99;
-    padding: 5px;
-    text-align: center;
-    border-radius: 2px;
-    cursor: pointer;
-    font-family: "Poppins", "sans-serif";
-}
-
-.btn_form:hover{
-    background-color: #282C34;
-    color: #33CC99;
-}
-/* ESTOS SON LOS BOTONES Y TODAVIA NO LOS DEPURAMOS  */
 
 
 /* ----------- FULLSLIDER HOME ------------ */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
+}
+
+.carousel-caption {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    right: 5%;
+    left: 5%;
+
+}
+
+.carousel-caption p{
+    align-self: flex-start;
+}
+
+.carousel-caption h2{
+    align-self: flex-start;
+}
 .fullslider {
     background-size: cover;
     height: 100vh;
@@ -246,31 +282,32 @@ header span i:hover  {
 
 /* ----------- SECTION:NFILO ------------ */
 
-#fondogrisclaro {
-    background-color:  rgba(210, 210, 210, 0.2) ;
-}
 
-.textonfilonhistorias {
-    padding: 10%;
+.textoindex {
+    width: 80%;
 }
-
-.textonfilonhistorias p{
+.textoindex p{
     text-align: justify;
 }
 
-.flex_cen_cen_full div {
-    height: 100%;
+.imagendefondoindexcob {
+    background-image: url(../images/portadacob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
 }
 
-.flex_cen_cen_full div img {
-    width: 100%;
+.imagendefondoindexlacoste {
+    background-image: url(../images/lacoste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
 }
 
-.nfilonhistorias .btn {
-    width: 40%;
-    height: 50px;
-    text-transform: uppercase;
-}
 
 /* ----------- SECTION:NFILO  ------------ */
 
@@ -542,7 +579,7 @@ font-size: 1.5rem;
 #botonproductos {
     width: 100%;
     padding-top: 0.5rem;
-    margin: 0 aut0;
+    margin: 0 auto;
 }
 
 .fa-heart:hover {
@@ -571,36 +608,33 @@ font-size: 1.5rem;
 .nproducts .titular{
     display: flex;
     align-items: flex-start;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 7.5%;
 }
 .nproducts {
-    margin-bottom: 2rem;
+    height: 100vh;
 }
 
-#txticons, #txtnumbers, #txtabc {
-    display: none;
-}
 
-#imgnumbers {
-    background-image: url(../images/babuinonumbers.png);
+
+#imgempotrables {
+    background-image: url(../images/fedrogrilla.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
 
-#imgicons {
-    background-image: url(../images/babuinoicons.png);
+#imgapliques {
+    background-image: url(../images/crollgrilla.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
-#imgabc {
-    background-image: url(../images/babuinabcdario.png);
+#imgproyectores {
+    background-image: url(../images/urogrilla.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -648,49 +682,10 @@ font-size: 1.5rem;
     z-index: 100;
 }
 
-.vermas:hover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 44, 52);
-    color:rgba(255, 255, 255);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 2.5rem;
-    transition: 0.4s;
-    text-shadow: 2px 2px 2px #33CC99;
+
 }
 
-/* ----------- SECTION:NHISTORIAS----------- */
-/* ------------ SECTION FAQS BENEFICIOS------ */
-.beneficios-list{
-    margin-top: 100px;
-    padding: 1rem;
-    background-color:rgba(210, 210, 210, 0.2);
-    margin: 0 auto;
-    width: 70%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(4,1fr);
-}
 
-.beneficio_1{
-    grid-area: 1 / 1 / 2/ 3;
-}
-
-.beneficio_2{
-    grid-area: 2 / 2 / 3 / 4;
-}
-
-.beneficio_3{
-    grid-area: 3/ 1 / 4 / 3;
-}
-
-.beneficio_4{
-    grid-area: 4 / 2 / 5 / 4;
-}
 /*  ----------------------------------------- */
 #fondogrisoscuro {
     background-color: rgba(40, 44, 52);
@@ -959,6 +954,7 @@ align-items: center;
 
 
 
+
 .form-check-inline {
   display: flex;
   width: 100%;
@@ -1027,6 +1023,10 @@ border:1px solid white;
   background-color: black;
   }
 
+  #letrablanca  {
+    color: white;
+    }
+
 #inlineFormCustomSelectPref  {
   width: 100%;
 }
@@ -1061,14 +1061,14 @@ padding-right: 0;
 
     /* ----------- SECTION:NPRODUCTSTABLET----------- */
     .containergrid {
-        display: grid;
-        width: 70%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2px;
-        grid-template-rows: repeat 1fr, 1fr, 1fr;
-        height: 600px;
+            display: grid;
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2px;
+            grid-template-rows: 1fr;
+            height: 600px;
     }
 
     .nproducts .titular {
@@ -1084,15 +1084,7 @@ padding-right: 0;
         flex-grow: 0.5;
     }
 
-    #txticons, #txtnumbers, #txtabc {
-        display: flex;
-        padding: 10%;
-        text-align: justify;
-        align-items: center;
-        flex-direction: column;
-        background-color: rgba(210, 210, 210, 0.2);
-        background-image: url(../images/lineas.png);
-    }
+
 
     .color {
         flex-direction: row;
@@ -1147,49 +1139,47 @@ padding-right: 0;
     /* ----------- SECTION:FULLSLIDERDESKTOP ------------ */
     /* ----------- SECTION:FULLSLIDERDESKTOP ------------ */
     /* ----------- SECTION:NFILODESKTOP ------------ */
+
+    .textoindex {
+        width: 100%;
+
+    }
+    .padding15izq5der {
+        padding-left: 15%;
+        padding-right: 5%;
+    }
+
+    .padding15der5izq {
+        padding-right: 15%;
+        padding-left: 5%;
+    }
+
+
     .flex_cen_cen_full {
         flex-direction: row;
     }
     .flex_cen_cen_full div{
         width: 100%;
     }
-    .textonfilonhistorias {
+
+    .textonindex .izq {
         padding-left: 20%;
     }
-    .textonfilonhistorias h4 {
-        color: rgba(200, 200, 200);
 
+    .textonindex .der {
+        padding-right: 20%;
+    }
+
+    .textonindex h4 {
+        color: rgba(200, 200, 200);
     }
     /* ----------- SECTION:NFILODESKTOP  ------------ */
     /* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
-    .containergrid {
-            display: grid;
-            width: 70%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 2px;
-            grid-template-rows: repeat (3, 1fr);
-            height: 600px;
-    }
+
         .titular .btn_form {
             flex-grow: 0;
         }
-        #txtnumbers {
-            order: 4;
-        }
-        #txticons {
-            order: 2;
-        }
-        #imgicons, #faqs_2{
-            order: 5;
-        }
-        #imgabc, #faqs_3{
-            order: 3;
-        }
-        #txtabc{
-            order: 6;
-        }
+
 }
 /*  AP 09.07.2019 .... ESTILOS FORMULARIOS */
         /*
@@ -1204,66 +1194,95 @@ padding-right: 0;
 
 .threed:hover{
     box-shadow:
-    1px 1px #aaa,
-    2px 2px #aaa,
-    3px 3px #aaa;
+    1px 1px black,
+    2px 2px black,
+    3px 3px black;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
 
-
-.modal-content {
-    background: #E6E6E6;
-    padding:2rem;
-    text-align: center;
+.threedamarillo:hover{
+    box-shadow:
+    1px 1px yellow,
+    2px 2px yellow,
+    3px 3px yellow;
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
 }
 
 
-.contenedor_ap {
+.containerregistro {
+    background-color: black;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
     display: flex;
 }
 
-.modal-content h2  {
+.containeringreso {
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+.contenedor_ap {
+    margin: 0 auto;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contenedor_ap h2  {
     text-transform: uppercase;
     weight: 200;
+    align-self: flex-start;
+    padding-bottom: 2rem;
 }
 
 input[type="text"], input[type="password"], input[type="email"]{
-    background-color: #E6E6E6;
     font-size: 1rem;
-    padding:10px;
+    padding: 10px;
     border: none;
     width: 100%;
     transform: none;
+    color: black;
+    opacity: 1;
 }
 
 .input_contenedor_ap {
     margin-bottom:0.5rem;
     margin-top:0.5rem;
-    border: solid 0.1rem #aaa;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    background-color:  #fff;
+
 }
 
 .divformu {
-    margin-top:0.7rem;
-    margin-bottom:0.7rem;
+    margin-top:2rem;
     width: 100%;
     font-size: 1rem;
+    color: white;
+
 }
 
 
 #olvidastecontra {
     text-align: right;
+    color: black;
 }
 
 #recuerdame {
-    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -1279,7 +1298,7 @@ input[type="text"], input[type="password"], input[type="email"]{
 
 .icon {
     min-width: 40px;
-    color: #999;
+    color: black;
     text-align: center;
 }
 
