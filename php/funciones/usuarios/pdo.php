@@ -2,7 +2,7 @@
 
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=babuino', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=ideadb', 'root', '');
     /*$stmt = $pdo->prepare('select *from users');
     */
     include("../funciones.php");
