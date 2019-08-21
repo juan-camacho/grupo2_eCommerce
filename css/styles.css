@@ -77,16 +77,22 @@ bold {
     border: none;
     background-color: inherit;
 
-
 }
 
 .btn-fblanco{
-    border-radius: 0;
     font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    border: none;
+    font-size: 1rem;
     background-color: inherit;
+    background-color: #C0FF02;
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.btn-fblanco:hover{
+    color: white;
+    background-color: black;
 }
 
 
@@ -113,6 +119,77 @@ bold {
     border: 1px black solid;
     font-weight: bold;
 }
+
+
+.card {
+    border: 0px;
+    max-width: 180px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+  .card-img-top {
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+
+    }
+
+.subtitulocards  {
+  width: 100%;
+  text-align: center;
+}
+.table {
+  margin-bottom: 0px;
+  }
+
+.subtituloproducto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px grey solid;
+}
+
+label h5  {
+  text-transform: uppercase;
+  }
+
+  .subtituloppal {
+    font-size: 1.25rem;
+    padding-bottom: 0px;
+      }
+.table td, .table th{
+padding-left: 0.75rem;
+padding-right: 0.75rem;
+padding-bottom: 0rem;
+padding-top: 0rem;
+border: none;
+
+
+}
+
+.table td{
+font-weight: 400;
+text-transform: uppercase;
+font-size: 0.75rem;
+text-align: left;
+}
+
+.table th{
+font-weight: 300;
+font-size: 0.75rem;
+text-align: left;
+}
+
+
+.center {
+  justify-content: center;
+  }
+
+
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 /* ---- TIPOS DE FLEX GENERALES  ----- */
 
@@ -140,6 +217,12 @@ bold {
     color: rgba(246,246,246);
 }
 
+.form-check-input input[type="radio"]{
+  display: none;
+  visibility: hidden;
+
+
+  }
 /* ---- FIN DE GENERALES ----- */
 
 /* Header - USA CLASES DE BOOTSTRAP*/
@@ -314,10 +397,20 @@ header span i  {
 
 /* ----------- SECTION:NPRODUCTS ------------ */
 
+
+  .width100 {
+    width: 100%;
+
+    }
+
+
 #containerproducto {
- width:100%;
- margin-top: 5rem;
- margin-bottom: 5rem;
+  max-width: 70%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  height: 100vh;
+  margin-left: none;
+  margin-right: none;
 }
 
 #containerproductos {
@@ -330,6 +423,13 @@ header span i  {
   width: 100%;
 
   }
+
+  .form check {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
 /* ----------- SECTION:NPRODUCTS - RESPONSIVE CARDS ------------ */
 
 /* ----------- SECTION:NPRODUCTS - FILTROS ------------ */
@@ -437,11 +537,7 @@ input[type=range] + .thumb .value {
         column-count: 2;
     }
 
-    #containerproducto {
-     width:80%;
-     margin-top: 5rem;
-     margin-bottom: 5rem;
-    }
+
 
     #containerproductos {
      width:80%;
@@ -469,11 +565,6 @@ input[type=range] + .thumb .value {
 }
 
 
-.card {
-    border-radius: 0;
-    margin: 0;
-}
-
 .text-center {
     border: 0;
 
@@ -488,6 +579,8 @@ input[type=range] + .thumb .value {
     font-weight: 300;
 
         }
+
+
 
 
 .containterlistproductos {
@@ -531,22 +624,7 @@ input[type=range] + .thumb .value {
 
     }
 
-.cardproductotexto {
-text-align: center;
-padding-top: 0.5rem;
-overflow:hidden;
-}
 
-.cardproductotexto p {
-text-align: center;
-margin-bottom: 0;
-}
-
-.cardproductotexto span {
-font-weight: 500;
-font-size: 1.5rem;
-
-}
 
 .precio {
     margin: 0 auto;
@@ -557,6 +635,7 @@ font-size: 1.5rem;
     padding: 0;
     border: 0;
 }
+
 
 
 
@@ -600,7 +679,7 @@ font-size: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
     height: 100vh;
 }
 
@@ -861,13 +940,7 @@ perfil de usuario AS - 09.07.2019
 
 /* Useful Classes */
 
-.containerproducto {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 5%;
-}
+
 
 
 
@@ -955,17 +1028,18 @@ align-items: center;
 
 
 
-.form-check-inline {
+.form-check {
   display: flex;
   width: 100%;
   flex-direction: row;
-  border-radius: 1px solid grey,
+  justify-content: space-between;
 }
 
 .btn-group {
 width: 100%;
 display: flex;
   }
+
 
 #btngris{
   width: 100%;
