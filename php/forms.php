@@ -18,7 +18,7 @@
   }
 
   function repass($value, $option) {
-    return $value == $option ? 'selected' : '';
+    return $value == $option;
   }
   $errors = [];
 
@@ -36,7 +36,10 @@
     global $errors;
     return $errors[$field];
   }
- 
+ function passError($field){
+     global $errors;
+     return $errors[$field];
+ }
   function isValid() {
     global $errors;
     return empty($errors);

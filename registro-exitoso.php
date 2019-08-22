@@ -5,6 +5,7 @@
 <body>
 <?php require_once("php/mod/header.php")?>
 <main>
+    <?php print_r($_POST); ?>
     <div class="containerregistro">
         <h1 style="color: yellow; DISPLAY: FLEX;">Formulario de Registro | Proyectos DH</h1> <br>
         <div class="success-message">
