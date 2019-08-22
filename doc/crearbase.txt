@@ -1,0 +1,52 @@
+DROP DATABASE IF EXISTS IDEADB;
+create database IDEADB;
+use IDEADB;
+
+create table USUARIOS (
+ID int auto_increment,
+NOMBRE varchar(100) NOT NULL,
+APELLIDO varchar(100) DEFAULT  NULL,
+EMAIL varchar(500) COLLATE latin1_german2_ci NOT NULL,
+AVATAR varchar(100) COLLATE latin1_german2_ci DEFAULT NULL,
+USUARIOPASSWORD varchar(500) COLLATE latin1_german2_ci NOT NULL,
+CIUDAD varchar(90) COLLATE latin1_german2_ci DEFAULT NULL,
+PROVINCIA varchar(20) COLLATE latin1_german2_ci DEFAULT NULL,
+CODIGOPOSTAL varchar(12) COLLATE latin1_german2_ci DEFAULT NULL,
+VERIFICACIONEMAIL tinyint(1) DEFAULT '0',
+REGISTRODEUSUARIO timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+USUARIOIP varchar(50) COLLATE latin1_german2_ci DEFAULT NULL,
+TELEFONO varchar(20) COLLATE latin1_german2_ci DEFAULT NULL,
+PAIS varchar(20) COLLATE latin1_german2_ci DEFAULT NULL,
+DIRECCION varchar(100) COLLATE latin1_german2_ci DEFAULT NULL,
+primary key(id)
+)DEFAULT CHARSET=latin1 COLLATE=latin1_german2_ci AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS PRODUCTOS (
+ID int NOT NULL AUTO_INCREMENT,
+ARTICULO varchar(100) COLLATE latin1_german2_ci NOT NULL,
+    INCLUYE varchar(2) default null,
+    DIM varchar(10) default null,
+    POTENCIA varchar(10) default null,
+    T_COLOR  varchar(10) COLLATE latin1_german2_ci,
+    ANGULO varchar(10) COLLATE latin1_german2_ci,
+    FLUJO varchar(10) COLLATE latin1_german2_ci,
+    CRI varchar(10) COLLATE latin1_german2_ci,
+    IP varchar(10) default null,
+    COLOR varchar(10) default null,
+    DIMENCIONES varchar(20) default null,
+    CATEGORIA int(11) default null,
+    CUT_OUT varchar(10) default null,
+PRECIO float NOT NULL,
+    FAMILIA varchar(10) NOT NULL,
+ESTADO tinyint(1) DEFAULT '0',
+INGRESO_APROXIMADO varchar(10) default null,
+DESCRIPCION text default null,
+IMGPRODUCTOS varchar(100),
+    PRODUCTOACTUALIZACION timestamp  DEFAULT CURRENT_TIMESTAMP,
+MARCO tinyint(1) DEFAULT '0',
+    CANTIDAD int(200) default null,
+PRIMARY KEY (ID)
+)DEFAULT CHARSET=latin1 COLLATE=latin1_german2_ci AUTO_INCREMENT=1 ;
+
+use ideadb;
+select * from productos;
