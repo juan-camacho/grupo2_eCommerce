@@ -20,24 +20,21 @@
                     </div>
                   </div>
                     <div class="cart-item row justify-content-center">
-                            <div class="row align-items-start">
-                            <div class="col-12 col-lg-6">
-                              <div class="row">
-                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
-                                  <div class="">
-                                    1.
+                            <div class="row align-items-center">
+                              <div class="col-12 col-lg-6">
+                                <div class="row">
+                                  <div class="col-12 col-md-4 text-center fotocarrito d-flex align-items-center">
+                                    <img src="images/marcoc.jpg" alt="">
                                   </div>
-                                  <img src="images/marcor.jpg" alt="">
-                                </div>
-                                <div class="col-8">
-                                  <h5> 06.71.1222.03 </h5>
-                                  <h6> Fedro R recedido lorem ipsum lorem ipsum</h6>
-                                  <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                  <div class="col-12 col-md-8">
+                                    <h5> 06.71.1222.03 </h5>
+                                    <h6> Fedro C recedido lorem ipsum lorem ipsum</h6>
+                                    <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
                             <div class="col-12 col-lg-6">
-                              <div class="row align-items-center">
+                              <div class="row align-items-center detalle">
                                 <div class="col-4 text-center">
                                   <h5> Precio </h5>
                                   <h6> $200</h6>
@@ -58,24 +55,21 @@
                         </a>
                     </div>
                     <div class="cart-item row justify-content-center">
-                            <div class="row align-items-start">
-                            <div class="col-12 col-lg-6">
-                              <div class="row">
-                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
-                                  <div class="">
-                                    2.
+                            <div class="row align-items-center">
+                              <div class="col-12 col-md-6">
+                                <div class="row">
+                                  <div class="col-12 col-lg-4 text-center fotocarrito d-flex align-items-center">
+                                    <img src="images/marcoc.jpg" alt="">
                                   </div>
-                                  <img src="images/marcocprof.jpg" alt="">
-                                </div>
-                                <div class="col-8">
-                                  <h5> 06.71.1222.03 </h5>
-                                  <h6> Fedro R recedido lorem ipsum lorem ipsum</h6>
-                                  <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                  <div class="col-12 col-md-8">
+                                    <h5> 06.71.1222.03 </h5>
+                                    <h6> Fedro C recedido lorem ipsum lorem ipsum</h6>
+                                    <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
                             <div class="col-12 col-lg-6">
-                              <div class="row align-items-center">
+                              <div class="row align-items-center  detalle">
                                 <div class="col-4 text-center">
                                   <h5> Precio </h5>
                                   <h6> $200</h6>
@@ -96,16 +90,13 @@
                         </a>
                     </div>
                     <div class="cart-item row justify-content-center">
-                            <div class="row align-items-start">
-                            <div class="col-12 col-lg-6">
+                            <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
                               <div class="row">
-                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
-                                  <div class="">
-                                    3.
-                                  </div>
+                                <div class="col-12 col-lg-4 text-center fotocarrito d-flex align-items-center">
                                   <img src="images/marcoc.jpg" alt="">
                                 </div>
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                   <h5> 06.71.1222.03 </h5>
                                   <h6> Fedro C recedido lorem ipsum lorem ipsum</h6>
                                   <a href="" class="descargaft"> Descargar ficha técnica</a>
@@ -113,7 +104,7 @@
                               </div>
                             </div>
                             <div class="col-12 col-lg-6">
-                              <div class="row align-items-center">
+                              <div class="row align-items-center  detalle">
                                 <div class="col-4 text-center">
                                   <h5> Precio </h5>
                                   <h6> $200</h6>

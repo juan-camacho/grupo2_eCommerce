@@ -79,7 +79,7 @@ bold {
     border-radius: 0;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     background-color: inherit;
 
@@ -126,14 +126,18 @@ bold {
     font-weight: bold;
 }
 
-
-.card card-producto {
+.productopuntual {
+  width: 100%;
+}
+.card-producto {
     border: 0px;
-    max-width: 180px;
+    max-width: 150px;
     display: flex;
     justify-content: center;
 
 }
+
+
 
 
   .card-img-top {
@@ -143,20 +147,32 @@ bold {
 
     }
 
-.subtitulocards  {
+.subtitulocards h5  {
   width: 100%;
   text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+
 }
+
+
+
 .table {
   margin-bottom: 0px;
+  width: 100%;
   }
 
 .subtituloproducto {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px grey solid;
+}
+
+.modal-footer
+{ justify-content: space-between;
 }
 
 label h5  {
@@ -174,8 +190,8 @@ padding-bottom: 0rem;
 padding-top: 0rem;
 border: none;
 
-
 }
+
 
 .table td{
 font-weight: 400;
@@ -188,6 +204,11 @@ text-align: left;
 font-weight: 300;
 font-size: 0.75rem;
 text-align: left;
+}
+
+.detalle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -332,7 +353,7 @@ header span i  {
 
 #fsfaqs {
     background: url(../images/pattern1.png) no-repeat fixed center;
-    background-color:#FCADA5;
+    background-color:yellow;
 }
 
 #fsnosotros {
@@ -343,7 +364,7 @@ header span i  {
 
 #fscontacto {
     background: url(../images/pattern1blanco.png) no-repeat fixed center;
-    background-color: rgba(40, 44, 52);
+    background-color: black;
 }
 
 
@@ -390,6 +411,18 @@ header span i  {
 
 .imagendefondoindexlacoste {
     background-image: url(../images/lacoste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
+}
+
+
+.imagendefondoindexsuarez
+
+{
+    background-image: url(../images/tristansuarez.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -649,11 +682,6 @@ input[type=range] + .thumb .value {
 
 
 
-.precio {
-    margin: 0 auto;
-    font-size: 1.2rem;
-}
-
 .card-footer {
     padding: 0;
     border: 0;
@@ -662,17 +690,6 @@ input[type=range] + .thumb .value {
 
 
 
-
-.precioybotones {
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    align-items: center;
-    font-size: 1.2rem;
-}
 
 .float-right i {
     color: grey;
@@ -706,6 +723,36 @@ input[type=range] + .thumb .value {
     height: 100vh;
 }
 
+.bajarmas {
+  padding-top: 3rem;
+
+}
+
+#letrablanca {
+color: white;
+  }
+.containerfooter {
+width: 80%;
+margin: 0 auto;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+
+.containerfooter li {
+font-weight: 250;
+}
+
+
+
+.rowfooter {
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.colfoot {
+align-items: flex-start;
+}
 
 .nproducts .titular{
     display: flex;
@@ -714,6 +761,20 @@ input[type=range] + .thumb .value {
     padding-bottom: 3rem;
     padding-left: 7.5%;
 }
+
+#logofooter {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+  }
+
+
+  #logofooter img {
+ max-width: 200px;
+ align-self: center;
+    }
+
 .nproducts {
     height: 100vh;
 }
@@ -916,17 +977,20 @@ perfil de usuario AS - 09.07.2019
 
 
 #footer {
-    background: #33FFCC;
+    background: black;
     flex-direction: column;
+    max-width: 90%;
 
 }
 
 .flexspacebetweenfooter {
     display: flex;
     flex-direction: column;
-    background-color: rgba(247,247,247);
+    background-color: black;
     flex: 3;
-    color: rgba(41,41,41);
+    color: white;
+    font-weight: 200;
+
 }
 
 .flexstart {
@@ -938,17 +1002,34 @@ perfil de usuario AS - 09.07.2019
 
 
 .partefooter {
-    border: 1px solid white;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: left;
+
 }
 
+.partefooter li {
+    font-size:1rem;
+    font-weight: 200;
+}
+
+.partefooter img {
+    max-width: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+
+
+  }
 
 .flexstart img {
     padding-left: 2rem;
     padding-right: 2rem;
+    max-width: 300px;
 }
 
 
@@ -974,11 +1055,7 @@ perfil de usuario AS - 09.07.2019
 
 }
 
-.precioytitulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .titulo {
     flex-grow: 2;
     padding-top: 1rem;
@@ -1064,69 +1141,7 @@ display: flex;
   }
 
 
-#btngris{
-  width: 100%;
-  border:1px solid white;
-  background-color: rgba(246,246,246);
-}
 
-#btnama{
-  width: 100%;
-  border:1px solid white;
-  background-color: rgba(254,228,167);
-}
-
-#btnrosa{
-  width: 100%;
-  border:1px solid white;
-  background-color: rgba(244,224,225)  ;
-}
-
-#btnrosa:hover {
-  background-color: rgba(199, 184,184);
-}
-
-
-#btnrojo{
-  width: 100%;
-  border:1px solid white;
-  background-color: rgba(246, 169,189);
-}
-
-#btnver{
-  width: 100%;
-  border:1px solid white;
-  background-color: rgba(162, 237, 206) ;
-}
-
-#btnazul{
-  width: 100%;
-border:1px solid white;
-    background-color: rgba(181, 220, 249);
-}
-
-
-#btnvio {
-  width: 100%;
-border:1px solid white;
-    background-color: rgba(181, 220, 249);
-}
-
-#botoncolores input {
-  width: 100%;
-}
-
-#negro  {
-  background-color: black;
-  }
-
-  #letrablanca  {
-    color: white;
-    }
-
-#inlineFormCustomSelectPref  {
-  width: 100%;
-}
 .inline {
   display: flex;
   flex-direction: row;
@@ -1195,7 +1210,6 @@ padding-right: 0;
 
 
     #footer {
-        background: #33FFCC;
         flex-direction: row;
 
     }
@@ -1309,10 +1323,26 @@ padding-right: 0;
 
 
 .containerregistro {
-    background-color: black;
+  padding-top:  5rem;
     width: 100%;
+    margin-left: 0 auto;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+
+
+.containerregistro h3 {
+  background-color: yellow;
+}
+
+.containerregistro h5 {
+  color: white;
+  text-decoration: underline;
+  padding-top: 2rem;
 }
 
 .containeringreso {
@@ -1476,11 +1506,7 @@ h3.tienda {
     cursor: pointer;
 }
 
-.txt-producto .precio {
-    font-weight: bolder;
-    color: red;
-    font-size: 1.4rem;
-}
+
 
     .usuario {
         flex-direction: column;

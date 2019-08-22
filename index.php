@@ -45,35 +45,39 @@
 
                        </div>
                          <div class="containergrid">
-                         <div id="imgempotrables">
-                             <div class="subtitulo">
-                                 FEDRO
-                             </div>
-                             <div class="vermas">
-                                 <span> <a href="productos.php">VER FEDRO! </a></span>
-                             </div>
-                         </div>
+                         <div id="imgempotrables" >
+                           <a class="subtitulo" href="productos2.php">FEDRO</a>
+                           </div>
 
                          <div id="imgapliques">
-                             <div class="subtitulo">
-                                 CROLL
-                             </div>
-                             <div class="vermas">
-                                 <span><a href="productos.php">VER CROLL! </a></span>
-                             </div>
+                           <a class="subtitulo" href="productos2.php">URO</a>
+
+
                          </div>
                          <div id="imgproyectores">
-                             <div class="subtitulo">
-                                 URO
-                             </div>
-                             <div class="vermas">
-                                 <span><a href="productos.php">VER URO! </a></span>
-                             </div>
+                           <a class="subtitulo" href="productos2.php">CROLL</a>
                          </div>
                      </div>
                    </section>
 
                   <!-- NFILO  -->
+
+                  <section class="container-fluid">
+                      <div class="row">
+
+                          <div class="col-12 col-md-6 imagendefondoindexsuarez">
+                         </div>
+                          <div class="col-12 col-md-6">
+                              <div class="textonindex padding15der5izq">
+                                  <h3> TRISTAN SUAREZ </h3>
+                                  <h4> Casa particular </h4>
+                                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                  <button type="button" name="VER MAS" class="btn btn-famarilloblanco"> ver mas </button>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
                   <section class="container-fluid">
                       <div class="row">
                             <div class="col-12 col-md-6">
@@ -95,7 +99,7 @@
                   <section class="container-fluid">
                       <div class="row">
 
-                          <div class="col-12 col-md-6 imagendefondoindexlacoste"">
+                          <div class="col-12 col-md-6 imagendefondoindexlacoste">
                          </div>
                           <div class="col-12 col-md-6">
                               <div class="textonindex padding15der5izq">

@@ -7,10 +7,10 @@
 <main>
     <?php print_r($_POST); ?>
     <div class="containerregistro">
-        <h1 style="color: yellow; DISPLAY: FLEX;">Formulario de Registro | Proyectos DH</h1> <br>
-        <div class="success-message">
-          <h2 style="color: yellow;  DISPLAY: FLEX;">¡Gracias por registrarte!</h2>
-          <a href="register.php" style="color: yellow; DISPLAY: FLEX;;" >Volver al registro.</a>
+      <h3>¡Gracias por registrarte! </h3>
+
+<h5><a href="index.php" > Continuar navegando</a></h5>
+
         </div>
     </div>
 </main>
