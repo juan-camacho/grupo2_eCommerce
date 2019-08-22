@@ -402,6 +402,22 @@ header span i  {
     width: 100%;
 
     }
+#prueba {
+    width: 100%;
+    background-color: tomato;
+    height: 300px;
+
+
+}
+
+#prueba2 {
+    width: 100%;
+    background-color: green;
+    height: 300px;
+
+
+}
+
 
 
 #containerproducto {
