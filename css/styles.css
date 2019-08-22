@@ -60,6 +60,12 @@ p {
     font-weight: 200;
 }
 
+.total {
+  padding-top: 1.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 .error {
     color: #FF0000;
 }
@@ -121,7 +127,7 @@ bold {
 }
 
 
-.card {
+.card card-producto {
     border: 0px;
     max-width: 180px;
     display: flex;
@@ -402,28 +408,14 @@ header span i  {
     width: 100%;
 
     }
-#prueba {
-    width: 100%;
-    background-color: tomato;
-    height: 300px;
 
-
-}
-
-#prueba2 {
-    width: 100%;
-    background-color: green;
-    height: 300px;
-
-
-}
 
 
 
 #containerproducto {
   max-width: 70%;
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
   height: 100vh;
   margin-left: none;
   margin-right: none;
@@ -478,6 +470,10 @@ header span i  {
     font-weight: 300;
 }
 
+.card-body ul {
+padding-left: 0px;
+}
+
 
 .widget-body ul {
     text-align: left;
@@ -488,7 +484,6 @@ header span i  {
 
 
 
-
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     background-color:  #33CC99;
@@ -496,6 +491,18 @@ header span i  {
 }
 
 
+
+.cart-item {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+
+.descargaft {
+  font-size: 0.75rem;
+  background-color: yellow;
+}
 
 #colores {
     padding-left: 4rem;
@@ -1317,6 +1324,17 @@ padding-right: 0;
 }
 
 
+.titulocarrito {
+text-align: left;
+width: 100%;
+margin-bottom: 1rem;
+}
+
+  #headercarro {
+    margin-bottom: 2rem;
+
+}
+
 
 .contenedor_ap {
     margin: 0 auto;
@@ -1484,6 +1502,4 @@ h3.tienda {
         height: 100%;
         text-align: center;
     }
-}
-
 }

@@ -8,41 +8,171 @@
                       <!-- FULLSLIDER -->
                 <!-- FILTROS -->
           <div class="container" id="containerproducto">
-            <div class="row">
-                <div class="col-lg-8" id="prueba">
-                    <div class="cart-item">
-                        <div class="row align-items-center">
-                            <div class="col-4 lg-2">
-                                hola
+            <div class="row" id="headercarro" >
+              <h4> / CARRITO </h4
+                >
+            </div>
+            <div class="row align-items-start">
+                <div class="col-lg-8">
+                  <div class="row titulocarrito">
+                    <div class="col text-left">
+                      <h5> Tus seleccionados </h5>
+                    </div>
+                  </div>
+                    <div class="cart-item row justify-content-center">
+                            <div class="row align-items-start">
+                            <div class="col-12 col-lg-6">
+                              <div class="row">
+                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
+                                  <div class="">
+                                    1.
+                                  </div>
+                                  <img src="images/marcor.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                  <h5> 06.71.1222.03 </h5>
+                                  <h6> Fedro R recedido lorem ipsum lorem ipsum</h6>
+                                  <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-4 lg-2">
-                                hola
-                            </div>
-                            <div class="col-4 lg-2">
-                                hola
-                            </div>
-                            <div class="col-4 lg-2">
-                                hola
+                            <div class="col-12 col-lg-6">
+                              <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                  <h5> Precio </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Cantidad </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Total </h5>
+                                  <h6> $200</h6>
+                                </div>
+                              </div>
                             </div>
                         </div>
-
-
+                        <a class="cart-item close">
+                          <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    <div class="cart-item row justify-content-center">
+                            <div class="row align-items-start">
+                            <div class="col-12 col-lg-6">
+                              <div class="row">
+                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
+                                  <div class="">
+                                    2.
+                                  </div>
+                                  <img src="images/marcocprof.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                  <h5> 06.71.1222.03 </h5>
+                                  <h6> Fedro R recedido lorem ipsum lorem ipsum</h6>
+                                  <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                  <h5> Precio </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Cantidad </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Total </h5>
+                                  <h6> $200</h6>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <a class="cart-item close">
+                          <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    <div class="cart-item row justify-content-center">
+                            <div class="row align-items-start">
+                            <div class="col-12 col-lg-6">
+                              <div class="row">
+                                <div class="col-4 text-center fotocarrito d-flex align-items-center">
+                                  <div class="">
+                                    3.
+                                  </div>
+                                  <img src="images/marcoc.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                  <h5> 06.71.1222.03 </h5>
+                                  <h6> Fedro C recedido lorem ipsum lorem ipsum</h6>
+                                  <a href="" class="descargaft"> Descargar ficha técnica</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                  <h5> Precio </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Cantidad </h5>
+                                  <h6> $200</h6>
+                                </div>
+                                <div class="col-4 text-center">
+                                  <h5> Total </h5>
+                                  <h6> $200</h6>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <a class="cart-item close">
+                          <i class="fas fa-times"></i>
+                        </a>
                     </div>
                     </div>
 
-                <div class="col-lg-4" id="prueba2">
-                    <div class="card">
-                        <div class="card-header">
-                            hola
-                        </div>
+                <div class="col-lg-4">
+                  <div class="row titulocarrito">
+                    <div class="col text-left">
+                      <h5> Carrito </h5>
+                    </div>
+                  </div>
+                    <div class="card d-flex justify-content-center cart-resume">
                         <div class="card-body">
-                            hola
+                            <ul>
+                              <li  class="d-flex justify-content-between">
+                                <div>
+                                  Subtotal
+                                </div>
+                                <div class="">
+                                  $180
+                                </div>
+                              </li>
+                              <li class="d-flex justify-content-between">
+                                <div class="">
+                                  Envio
+                                </div>
+                                <div class="">
+                                  Gratis
+                                </div>
+                              </li>
+                              <li class="total d-flex justify-content-between">
+                                <div class="">
+                                  Total
+                                </div>
+                                <div class="">
+                                  Gratis
+                                </div>
+                              </li>
+                            </ul>
                         </div>
-                        <div class="card-button">
-                            hola
-                        </div>
+                        <button class="btn btn-famarilloblanco" type="submit" name="compracarrito"> COMPRAR </button>
+
                     </div>
-                    <button type="button" name="button"></button>
 
                     </div>
 

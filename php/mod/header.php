@@ -31,7 +31,7 @@
                 <a class="nav-link" href="register.php">REGISTRATE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a class="nav-link" href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </li>
             </ul>
         </div>

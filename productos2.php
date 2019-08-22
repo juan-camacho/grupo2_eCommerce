@@ -20,7 +20,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedromini32.jpg" class="card-img-top" alt="...">
                           <table class="table ">
 
@@ -51,7 +51,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedromini7.jpg" class="card-img-top" alt="...">
                           <table class="table ">
 
@@ -83,7 +83,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedrosmall7.jpg" class="card-img-top" alt="...">
                           <table class="table ">
 
@@ -114,7 +114,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedrosmall13.jpg" class="card-img-top" alt="...">
                           <table class="table ">
 
@@ -146,7 +146,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio"  value="option1">
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedro18.jpg" class="card-img-top" alt="...">
                           <table class="table ">
 
@@ -177,7 +177,7 @@
                       <div class="btn">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                         <label class="form-check-label" for="gridRadios1">
-                          <div class="card">
+                          <div class="card card-producto">
                           <img src="images/fedro334.jpg" class="card-img-top" alt="...">
                           <table class="table">
 
@@ -230,7 +230,7 @@
                         <div class="btn">
                           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                           <label class="form-check-label" for="gridRadios1">
-                            <div class="card">
+                            <div class="card card-producto">
                             <img src="images/empotrablespot.jpg" class="card-img-top" alt="...">
                             <table class="table ">
 
@@ -257,7 +257,7 @@
                         <div class="btn">
                           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                           <label class="form-check-label" for="gridRadios1">
-                            <div class="card">
+                            <div class="card card-producto">
                             <img src="images/empotrablemed.jpg" class="card-img-top" alt="...">
                             <table class="table ">
 
@@ -285,7 +285,7 @@
                         <div class="btn">
                           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                           <label class="form-check-label" for="gridRadios1">
-                            <div class="card">
+                            <div class="card card-producto">
                             <img src="images/empotrableflood.jpg" class="card-img-top" alt="...">
                             <table class="table ">
 
@@ -335,7 +335,7 @@
                           <div class="btn">
                             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                             <label class="form-check-label" for="gridRadios1">
-                              <div class="card">
+                              <div class="card card-producto">
                                 <table class="table ">
 
                                 <tbody>
@@ -362,7 +362,7 @@
                           <div class="btn">
                             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                             <label class="form-check-label" for="gridRadios1">
-                              <div class="card">
+                              <div class="card card-producto">
                               <table class="table ">
 
                               <tbody>
@@ -389,7 +389,7 @@
                           <div class="btn">
                             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                             <label class="form-check-label" for="gridRadios1">
-                              <div class="card">
+                              <div class="card card-producto">
                               <table class="table ">
 
                               <tbody>
@@ -440,7 +440,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcor.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -463,7 +463,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcoc.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -487,7 +487,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcorprof.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -510,7 +510,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcocprof.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -534,7 +534,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcortrimless.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -557,7 +557,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio"  value="option1">
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcoctrimless.jpg" class="card-img-top" alt="...">
                                                       <table class="table ">
 
@@ -604,7 +604,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcoip44.jpg" class="card-img-top" alt="...">
                                                       <table class="table">
 
@@ -628,7 +628,7 @@
                                                   <div class="btn">
                                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                     <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card">
+                                                      <div class="card card-producto">
                                                       <img src="images/marcordoble.jpg" class="card-img-top" alt="...">
                                                       <table class="table">
 
