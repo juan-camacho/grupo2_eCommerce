@@ -1,5 +1,5 @@
 <header>
-  <?php require_once("php/funciones/funciones.php"); ?>
+
     <nav class="navbar fixed-top navbar-expand-lg nav-dark">
         <a class="navbar-brand" href="index.php"><img src="images/logo_led_cob.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,30 +1,15 @@
 <?php $tittle = "IDEA COB - REGISTRO"?>
 
 <?php
-    require_once("php/forms.php");
+require_once("php/forms/projectRegisterForm.php");
+require_once("php/models/projectModel.php");
 
 if ($_POST) {
-
-  // Validamos nombre
-  if (length(old('nombre'), 2, 20)) {
-    addError('nombre', 'El nombre del usuario debe tener entre 2 y 20 caracteres');
-  }
-
-  if (length(old('apellido'), 2, 20)) {
-    addError('apellido', 'El apellido del usuario debe tener entre 2 y 20 caracteres');
-  }
-  if (!email(old('email'))) {
-    addError('email', 'Debes escribir un email válido');
-  }
-  if (pass(old('password'))) {
-      addError('introduzca alguna contraseña valida');
-  }
-  if (pass(old('password2'))) {
-      addError('Las contraseñas deben ser iguales');
-  }
-  if (isValid()) {
-    header('location: registro-exitoso.php');
-  }
+    validateForm();
+    if (isValid()) {
+      saveProyect($pdo, $_POST);
+      //header('location: registro-exitoso.php');
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -36,15 +21,17 @@ if ($_POST) {
 
         <div class="containerregistro">
 
-           <form class="contenedor_ap" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+           <form class="contenedor_ap" accion="registro-exitoso.php" method="post">
                <h2 id="letrablanca">/ REGISTRO</h2>
                <div class="input_contenedor_ap threedamarillo">
                 <i class="fas fa-user icon" style="color: black"></i>
                 <input type="text" placeholder="nombre" name="nombre" value="<?= old('nombre') ?>">
                </div>
+
                <?php if (hasError('nombre')) : ?>
                    <span class="error"> <?= getError('nombre') ?></span> <br>
                <?php endif ?>
+
                <div class="input_contenedor_ap threedamarillo">
                 <i class="fas fa-user icon" style="color: black"></i>
                 <input type="text" placeholder="apellido" name="apellido" value="<?= old('apellido') ?>">

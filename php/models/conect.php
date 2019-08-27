@@ -16,20 +16,7 @@ public static function getInstance()
 return $this->instance;
     }
 }
-BD::$NAME = 'ideadb';
+BD::$NAME = 'ecommerce';
 BD::$USER = 'root';
 BD::$PASS = '';
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-
-        <?php  $conn = getInstance(1);
-        var_dump($conn);
-        ?>
-    </body>
-</html>
