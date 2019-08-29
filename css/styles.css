@@ -758,13 +758,20 @@ margin-bottom: 1rem;
 
 .contenedor_ap {
     margin: 0 auto;
-    width: 30%;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
     display: flex;
     text-align: center;
     padding: 2rem;
 }
+
+@media (min-width: 768px) {
+.contenedor_ap {
+  width: 40%;
+ }
+}
+
 
 .contenedor_ap h2  {
     text-transform: uppercase;
@@ -838,5 +845,3 @@ a.link {
         width: 100%;
     }
 }
-/* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
-/* ================ aldana pruebas ================= */
