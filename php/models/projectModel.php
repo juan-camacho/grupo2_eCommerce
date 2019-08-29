@@ -20,7 +20,8 @@
     $stmt->bindParam(':lastname', $data['lastname']);
     $stmt->bindParam(':image', $data['image']);
     $stmt->bindParam(':email', $data['email']);
-    $stmt->bindParam(':password', $data['password']);
+    $contraseña = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $stmt->bindParam(':password', $contraseña);
     $stmt->execute();
     return $pdo->lastInsertId();
   }
