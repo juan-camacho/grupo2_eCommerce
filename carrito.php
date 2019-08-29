@@ -7,7 +7,7 @@
     <main>
         <!-- FULLSLIDER -->
         <!-- FILTROS -->
-        <div class="container" id="containerproducto">
+        <div class="container containerproducto">
             <div class="row" id="headercarro" >
                 <h4> / CARRITO </h4
                     >

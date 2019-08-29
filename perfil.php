@@ -2,59 +2,63 @@
 <?php
 session_start();
 
- ?>
+?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php") ?>
-  <body>
-      <?php require_once("php/mod/header.php") ?>
-       <!-- Perfil  -->
-       <div class="formularios" style="padding-top: 7rem;">
-            <div class="formulario_ap">
-                <div class="avatar threed ">
-                </div>
-                <h3><?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?></h3>
-            <a href="register.php"><button type="button" name="button" class="btn_form"> Editar Perfil </button></a>
-            <br>
-            <div class="bloque">
-              <h5> Mis compras </h5>
-
-            </div>
-            <div class="interlineado">
-              <h4> </h4>
-
-            </div>
-            <div class="interlineado">
-              <h4> </h4>
-
-            </div>
-            <div class="interlineado">
-              <h4> </h4>
-
-            </div>
-            <div class="bloque">
-              <h5> Mis medios de pago </h5>
-
-            </div>
-            <div class="mediosdepago">
-
-              <div class="tarjeta">
-                TARJETA 1
-
-              </div>
-              <div class="tarjeta">
-                TARJETA2
-
-              </div>
-              <div class="tarjeta">
-                TARJETA 3
-              </div>
-            </div>
-            <a href="proximo.php"><button type="button" name="button" class="btn_form"> Agregar medio de pago </button></a>
+<body>
+  <?php require_once("php/mod/header.php") ?>
+  <!-- Perfil  -->
+  <main>
+    <div class="hero purpink d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3> Florencia Agustina Sanchez </h3>
+            <h4> Buenos Aires, Argentina </h4>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Datos personales </a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Ordenes </a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> Wishlist </a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <ul>
+            <li>
+              <h5> Nombre </h5>
+              <h6> Florencia Agustina Sanchez </h6>
+            </li>
+            <li>
+              <h5> Edad </h5>
+              <h6> 27 </h6>
+            </li>
+            <li>
+              <h5> Mail </h5>
+              <h6> fagustinasanchez@gmail.com </h6>
+            </li>
+            <li>
+              <h5> Algo </h5>
+              <h6> fagustinasanchez@gmail.com </h6>
+            </li>
+          </ul>
+         </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+      </div>
 
-    <!-- Footer -->
-    <?php require_once("php/mod/footer.php") ?>
-  </body>
+    </div>
+
+
+  </main>
+
+  <!-- Footer -->
+  <?php require_once("php/mod/footer.php") ?>
+</body>
 </html>

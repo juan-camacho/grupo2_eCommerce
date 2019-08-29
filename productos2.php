@@ -7,7 +7,7 @@
         <main>
                       <!-- FULLSLIDER -->
                 <!-- FILTROS -->
-          <div class="container-fluid" id="containerproducto">
+          <div class="container-fluid containerproducto">
             <div class="row" id="headercarro" >
               <h4> / ARMÁ TU LUMINARIA </h4
                 >
