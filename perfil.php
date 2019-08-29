@@ -1,4 +1,8 @@
-<?php $tittle = "Tienda Babuino - Perfil Del Usuario" ?>
+<?php $tittle = " Perfil Del Usuario" ?>
+<?php
+session_start();
+
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php") ?>
@@ -8,11 +12,8 @@
        <div class="formularios" style="padding-top: 7rem;">
             <div class="formulario_ap">
                 <div class="avatar threed ">
-
                 </div>
-                <h3>Nombre Usuario</h3>
-
-
+                <h3><?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?></h3>
             <a href="register.php"><button type="button" name="button" class="btn_form"> Editar Perfil </button></a>
             <br>
             <div class="bloque">

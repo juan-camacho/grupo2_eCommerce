@@ -1,8 +1,10 @@
 <?php $tittle = "IDEA COB - Home"?>
 <?php
 session_start();
+require_once("php/funciones.php");
 if ($_POST) {
-    $pdo = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '',);
+    //$pdo = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '',);
+    $pdo = get_connection();
     $sql = 'select * from users where email = :email limit 1';
     $stmt = $pdo->prepare($sql);
     $stmt->bindvalue('email', $_POST['email']);
@@ -27,18 +29,19 @@ if ($_POST) {
 <?php require_once("php/mod/header.php")?>
 <main>
         <div class="containeringreso">
-<?php if ($_POST): ?>
-            <span class="error">Usuario no encontrado</span>
-<?php endif ?>
+
             <form class="contenedor_ap" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <h2>/ LOG IN</h2>
+                <?php if ($_POST): ?>
+                            <span class="error">Usuario no encontrado</span>
+                <?php endif ?>
                 <div class="input_contenedor_ap threed">
                 <i class="fas fa-envelope icon"></i>
                     <input type="text" placeholder="Correo" name="email" >
                 </div>
                 <div class="input_contenedor_ap threed">
                     <i class="fas fa-key icon"></i>
-                    <input type="text" placeholder="contraseña" name="password">
+                    <input type="password" placeholder="contraseña" name="password">
                 </div>
                 <span class="error"></span> <br>
                 <div class="divformu" id="olvidastecontra">
@@ -51,9 +54,7 @@ if ($_POST) {
                     </label>
                 </div>
         </form>
-
 </div>
-
 </main>
 <!-- Footer -->
 <?php require_once("php/mod/footer.php") ?>

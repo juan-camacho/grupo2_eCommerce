@@ -15,7 +15,7 @@ function selected($value, $optionValue) {
 
 // Verifica si el campo está dentro de la longitud solicitada,
 // más de 8 caracteres por defecto
-function checkLength($string, $min = 8, $max = NULL) {
+function checkLength($string, $min = 2, $max = NULL) {
   if ($max) {
     return strlen($string) >= $min && strlen($string) <= $max;
   }
