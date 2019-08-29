@@ -5,9 +5,9 @@
 <body>
 <?php require_once("php/mod/header.php")?>
 <main>
-    <?php print_r($_POST); ?>
     <div class="containerregistro">
       <h3>¡Gracias por registrarte! </h3>
+    <h3>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h3>
 
 <h5><a href="index.php" > Continuar navegando</a></h5>
 
