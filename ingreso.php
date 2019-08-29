@@ -28,7 +28,7 @@ if ($_POST) {
 <body>
 <?php require_once("php/mod/header.php")?>
 <main>
-        <div class="containeringreso">
+        <div class="containeringreso limaazul">
 
             <form class="contenedor_ap" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <h2>/ LOG IN</h2>
@@ -41,11 +41,11 @@ if ($_POST) {
                 </div>
                 <div class="input_contenedor_ap threed">
                     <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="contraseña" name="password">
+                    <input type="password" placeholder="Contraseña" name="password">
                 </div>
                 <span class="error"></span> <br>
                 <div class="divformu" id="olvidastecontra">
-                    <span>Olvidaste tu contrasena?</span>
+                    <span>Olvidaste tu contraseña?</span>
                 </div>
                     <button class="btn btn-famarilloblanco" type="submit" name="submit">Ingresa</button>
                 <div class="divformu" id="recuerdame">

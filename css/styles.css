@@ -60,6 +60,9 @@ p {
     font-weight: 200;
 }
 
+main {
+padding-top: 62px
+}
 .total {
   padding-top: 1.25rem;
   font-weight: 400;
@@ -103,6 +106,15 @@ p {
     color: black;
     border: 1px black solid;
     font-weight: bold;
+}
+
+
+.limaazul{
+  background: linear-gradient(#a8ff78, #78ffd6);
+  }
+
+.purpink{
+background: linear-gradient(#7f00ff, #e100ff);
 }
 
 .productopuntual {
@@ -212,7 +224,7 @@ header {
 }
 
 .nav-link:hover {
-text-decoration: underline yellow ;
+text-decoration: underline white ;
     }
 
 
@@ -377,7 +389,7 @@ header span i  {
 
 
 
-#containerproducto {
+.containerproducto {
   max-width: 70%;
   margin-bottom: 5rem;
   margin-top: 8rem;
@@ -736,7 +748,6 @@ align-items: center;
 }
 
 .containeringreso {
-    background-color: yellow;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -758,13 +769,20 @@ margin-bottom: 1rem;
 
 .contenedor_ap {
     margin: 0 auto;
-    width: 30%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     display: flex;
     text-align: center;
     padding: 2rem;
 }
+
+@media (min-width: 992px) {
+.contenedor_ap {
+  width: 40%;
+ }
+}
+
 
 .contenedor_ap h2  {
     text-transform: uppercase;
@@ -781,6 +799,7 @@ input[type="text"], input[type="password"], input[type="email"]{
     transform: none;
     color: black;
     opacity: 1;
+    font-weight: 300;
 }
 
 .input_contenedor_ap {
@@ -838,5 +857,13 @@ a.link {
         width: 100%;
     }
 }
-/* ----------- SECTION:NPRDOUCDESKTOP  ------------ */
-/* ================ aldana pruebas ================= */
+
+
+    /* ----------- SECTION:PERFIL  ------------ */
+
+.hero {
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  height: 30vh;
+}
