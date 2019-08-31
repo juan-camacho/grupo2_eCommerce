@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aperturas` (
   `id` int(11) NOT NULL,
-  `angulo` int(11) NOT NULL,
-  `imagenapertura` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nombre` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `familia_id` int(11) DEFAULT NULL
+  `nombre` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `angulo` int(11) NOT NULL,
+  `imagen` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
