@@ -21,42 +21,48 @@ if ($_POST) {
         }
     }
 }
- ?>
+?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php")?>
 <body>
-<?php require_once("php/mod/header.php")?>
-<main>
-        <div class="containeringreso limaazul">
+    <?php require_once("php/mod/header.php")?>
+    <main>
+        <div class="containeringreso d-flex align-items-center limaazul">
 
-            <form class="contenedor_ap" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+            <form class="container formssmall" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <h2>/ LOG IN</h2>
+                <div class="form-row mb-3">
+                    <div class="form-control threed">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="text" placeholder="Correo" name="email" >
+                    </div>
+                </div>
                 <?php if ($_POST): ?>
-                            <span class="error">Usuario no encontrado</span>
+                    <span class="error">Usuario no encontrado</span>
                 <?php endif ?>
-                <div class="input_contenedor_ap threed">
-                <i class="fas fa-envelope icon"></i>
-                    <input type="text" placeholder="Correo" name="email" >
+                <div class="form-row mb-3">
+                    <div class="form-control threed">
+                        <i class="fas fa-key icon"></i>
+                        <input type="password" placeholder="Contraseña" name="password">
+                    </div>
                 </div>
-                <div class="input_contenedor_ap threed">
-                    <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña" name="password">
-                </div>
-                <span class="error"></span> <br>
-                <div class="divformu" id="olvidastecontra">
+                <span class="error"></span>
+                <div class="form-row d-flex justify-content-end mb-1">
                     <span>Olvidaste tu contraseña?</span>
                 </div>
-                    <button class="btn btn-famarilloblanco" type="submit" name="submit">Ingresa</button>
-                <div class="divformu" id="recuerdame">
+                <div class="form-row d-flex justify-content-center mb-1">
+                    <button class="btn btn-famarilloblanco flex-grow-1" type="submit" name="submit">Ingresa</button>
+                </div>
+                <div class="form-row d-flex justify-content-center mb-1 f700">
                     <label>
                         <input type="checkbox" checked="checked" name="recuerdame"> Recuerdame!
                     </label>
                 </div>
-        </form>
-</div>
-</main>
-<!-- Footer -->
-<?php require_once("php/mod/footer.php") ?>
+            </form>
+        </div>
+    </main>
+    <!-- Footer -->
+    <?php require_once("php/mod/footer.php") ?>
 </body>
 </html>

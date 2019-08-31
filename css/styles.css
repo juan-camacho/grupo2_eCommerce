@@ -60,17 +60,41 @@ p {
     font-weight: 200;
 }
 
+.f100 {
+    font-weight: 100;
+}
+
+.f300 {
+    font-weight: 300;
+}
+
+
+.f500 {
+    font-weight: 500;
+}
+
+
+
+.f700 {
+    font-weight: 700;
+}
+
+
 main {
 padding-top: 62px
 }
+
 .total {
   padding-top: 1.25rem;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
+
 .error {
     color: #FF0000;
+    text-align: left;
+
 }
 
 .btn {
@@ -223,9 +247,6 @@ header {
     color: white;
 }
 
-.nav-link:hover {
-text-decoration: underline white ;
-    }
 
 
 .navbar-brand {
@@ -767,69 +788,38 @@ margin-bottom: 1rem;
 }
 
 
-.contenedor_ap {
-    margin: 0 auto;
+.formssmall {
     width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    padding: 2rem;
+
 }
 
 @media (min-width: 992px) {
-.contenedor_ap {
+.formssmall {
   width: 40%;
  }
 }
 
 
-.contenedor_ap h2  {
+.formssmall h2  {
     text-transform: uppercase;
     weight: 200;
     align-self: flex-start;
     padding-bottom: 2rem;
 }
 
-input[type="text"], input[type="password"], input[type="email"]{
+.threed input[type="text"], .threed input[type="password"], .threed input[type="email"]{
     font-size: 1rem;
     padding: 10px;
+    width: 100%;
+    background-color: transparent;
     border: none;
-    width: 100%;
-    transform: none;
-    color: black;
-    opacity: 1;
-    font-weight: 300;
-}
-
-.input_contenedor_ap {
-    margin-bottom:0.5rem;
-    margin-top:0.5rem;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    background-color:  #fff;
-
-}
-
-.divformu {
-    margin-top:2rem;
-    width: 100%;
-    font-size: 1rem;
-    color: white;
-
 }
 
 
-#olvidastecontra {
-    text-align: right;
-    color: black;
-}
+
 
 #recuerdame {
-    color: black;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .divformu span {
@@ -867,3 +857,42 @@ a.link {
   margin-top: 0;
   height: 30vh;
 }
+
+.form-control {
+    width: 100%;
+    height: calc(1.5em + 1.875rem + 2px);
+    padding: 0.9375rem 0.9375rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border-radius: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: black;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+}
+
+
+.nav-item {
+  flex-grow: 1;
+}
+
+.perfil nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
