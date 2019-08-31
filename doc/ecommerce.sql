@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `aperturas` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `familia_id` int(11) DEFAULT NULL
   `nombre` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `angulo` int(11) NOT NULL,

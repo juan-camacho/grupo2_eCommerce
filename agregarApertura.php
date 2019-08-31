@@ -3,11 +3,12 @@
   $pageTitle = 'IDEA COB | Agregar Apertura';
 
   require_once 'php/forms/agregarAperturaForm.php';
+  require_once 'php/models/aperturaModel.php';
 
   if ($_POST) {
       validateForm();
       if (isValid()) {
-        //guardarAngulo($pdo, $_POST);
+        agregarApertura($pdo, $_POST, $_FILES);
         header('location: index.php');
       }
   }
@@ -56,7 +57,7 @@
       <div class="form-row mb-3">
         <div class="form-control threed">
           <i class="fas fa-image icon"></i>
-          <input type="text" placeholder="imagen" name="imagen" value="<?= old('imagen') ?>">
+          <input type="file" placeholder="imagen" name="imagen" value="<?= old('imagen') ?>">
         </div>
         <?php if (hasError('imagen')) : ?>
           <span class="error" style="color: white;"> <?= getError('imagen') ?></span> <br>
