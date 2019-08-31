@@ -12,8 +12,6 @@
                           <h1> Quienes </br> somos </h1>
                       </div>
                   </div>
-
-
 </main>
 <!-- Footer -->
 <?php require_once("php/mod/footer.php") ?>

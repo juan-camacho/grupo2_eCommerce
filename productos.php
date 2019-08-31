@@ -1,9 +1,9 @@
 <?php $tittle = "Tienda Babuino - productos"?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/mod/head.php")?>
+<?php require_once("partials/head.php")?>
   <body>
-    <?php require_once("php/mod/header.php"); ?>
+    <?php require_once("partials/header.php"); ?>
               <main>
                       <!-- FULLSLIDER -->
                       <section class="nproducts  bajarmas">
@@ -28,7 +28,7 @@
                       </section>
 
               </main>
-<?php require_once("php/mod/footer.php") ?>
+<?php require_once("partials/footer.php") ?>
       </div>
   </body>
 </html>

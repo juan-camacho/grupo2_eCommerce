@@ -1,9 +1,9 @@
 <?php $tittle = "IDEA COB - Home"?>
 <?php
 session_start();
-require_once("php/funciones.php");
+require_once("php/config/config.php");
+require_once("php/models/pdo.php");
 if ($_POST) {
-    $pdo = get_connection();
     $sql = 'select * from users where email = :email limit 1';
     $stmt = $pdo->prepare($sql);
     $stmt->bindvalue('email', $_POST['email']);
