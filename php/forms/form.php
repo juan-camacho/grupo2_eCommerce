@@ -22,6 +22,10 @@ function checkLength($string, $min = 2, $max = NULL) {
   return strlen($string) >= $min;
 }
 
+function checkIntBetween($number, $min, $max) {
+  return is_int($number) && $number >= $min && $number <= $max;
+}
+
 function checkEmail($string) {
   return filter_var($string, FILTER_VALIDATE_EMAIL);
 }

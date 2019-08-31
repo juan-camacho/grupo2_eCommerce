@@ -141,6 +141,10 @@ padding-top: 62px
 background: linear-gradient(#7f00ff, #e100ff);
 }
 
+.purporange {
+  background: linear-gradient(#833ab4, #fd1d1d, #fcb045);
+}
+
 .productopuntual {
   width: 100%;
 }
@@ -807,7 +811,11 @@ margin-bottom: 1rem;
     padding-bottom: 2rem;
 }
 
-.threed input[type="text"], .threed input[type="password"], .threed input[type="email"]{
+.threed input[type="text"],
+.threed input[type="password"],
+.threed input[type="email"],
+.threed input[type="number"],
+.threed select {
     font-size: 1rem;
     padding: 10px;
     width: 100%;
