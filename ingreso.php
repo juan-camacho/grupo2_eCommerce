@@ -3,21 +3,16 @@
 session_start();
 require_once("php/funciones.php");
 if ($_POST) {
-    //$pdo = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '',);
     $pdo = get_connection();
     $sql = 'select * from users where email = :email limit 1';
     $stmt = $pdo->prepare($sql);
     $stmt->bindvalue('email', $_POST['email']);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
-    //var_dump($_REQUEST);
-    //var_dump($_POST);
-    //var_dump($_SESSION); die;
     if ($user) {
         if (PASSWORD_VERIFY($_POST['password'], $user['password'])) {
             $_SESSION['user'] = $user;
             header('location: perfil.php');
-            //die ('Existe!');
         }
     }
 }

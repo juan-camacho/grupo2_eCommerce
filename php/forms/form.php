@@ -22,19 +22,19 @@ function checkLength($string, $min = 2, $max = NULL) {
   return strlen($string) >= $min;
 }
 
-function checkIntBetween($number, $min, $max) {
-  return is_int($number) && $number >= $min && $number <= $max;
-}
-
 function checkEmail($string) {
   return filter_var($string, FILTER_VALIDATE_EMAIL);
 }
-
-function checkMatch($string1, $string2) {
-  return $string1 === $string2;
+function checkpass($string){
+$uppercase = preg_match('@[A-Z]@', $string);
+$lowercase = preg_match('@[a-z]@', $string);
+$number    = preg_match('@[0-9]@', $string);
+ return strlen($string) > 6 && ($uppercase && ($lowercase && $number));
 }
 
-
+function checkMatch($string1, $string2) {
+    return $string1 === $string2;
+}
 // Manejo de errores
 
 // Usar global es una mala práctica, pero sin objetos no hay muchas otras opciones

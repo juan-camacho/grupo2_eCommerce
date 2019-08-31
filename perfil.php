@@ -14,7 +14,7 @@ session_start();
       <div class="container">
         <div class="row">
           <div class="col">
-            <h3> Florencia Agustina Sanchez </h3>
+            <h3>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h3>
             <h4> Buenos Aires, Argentina </h4>
           </div>
         </div>

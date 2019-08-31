@@ -1,4 +1,9 @@
 <?php $tittle = "IDEA COB - Registro exitoso"?>
+<?php
+session_start();
+$_SESSION['users'] = $users;
+
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once("php/mod/head.php")?>
