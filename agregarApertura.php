@@ -2,13 +2,18 @@
 
   $pageTitle = 'IDEA COB | Agregar Apertura';
 
+  require_once 'php/config/config.php';
+  require_once 'php/funciones.php';
   require_once 'php/forms/agregarAperturaForm.php';
   require_once 'php/models/aperturaModel.php';
+
 
   if ($_POST) {
       validateForm();
       if (isValid()) {
-        agregarApertura($pdo, $_POST, $_FILES);
+        $_POST['imagen'] = subirArchivo($_FILES['imagen'], APERTURAS_DIR);
+
+        agregarApertura($pdo, $_POST);
         header('location: index.php');
       }
   }
@@ -18,7 +23,7 @@
 <?php require_once 'partials/header.php' ?>
 <main>
   <div class="containerregistro purporange">
-    <form class="contenedor_ap" method="post">
+    <form class="contenedor_ap" method="post" enctype="multipart/form-data">
       <h2 id="letrablanca">/ NUEVA APERTURA</h2>
 
       <div class="form-row mb-3">

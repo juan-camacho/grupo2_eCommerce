@@ -8,7 +8,7 @@
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  function agregarApertura($pdo, $data, $files) {
+  function agregarApertura($pdo, $data) {
     $stmt = $pdo->prepare(
       "INSERT INTO aperturas (id, familia_id, nombre, angulo, imagen) VALUES (NULL, NULL, :nombre, :angulo, :imagen);"
     );
