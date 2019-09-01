@@ -5,6 +5,8 @@ const DB_NAME = 'DB_NAME';
 const DB_USER = 'DB_USER';
 const DB_PASS = 'DB_PASS';
 
-const APERTURAS_DIR = '../data/aperturas/';
+const APP_DIR = __DIR__ . '/../../' ;
+const APERTURAS_IMG_DIR = APP_DIR . '/data/aperturas/';
+const APERTURAS_IMG_PATH = 'data/aperturas/';
 
 ?>

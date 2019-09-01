@@ -4,8 +4,8 @@
 $errors = [];
 
 // Devuelve el valor de un campo o un string vacío
-function old($field) {
-  return $_REQUEST[$field] ?? '';
+function old($field, $default = '') {
+  return $_REQUEST[$field] ?? $default;
 }
 
 // Compara ambos valores y devuelve el string 'selected' en caso de que sean iguales
@@ -20,6 +20,10 @@ function checkLength($string, $min = 2, $max = NULL) {
     return strlen($string) >= $min && strlen($string) <= $max;
   }
   return strlen($string) >= $min;
+}
+
+function checkIntBetween($number, $min, $max) {
+  return is_int((int)$number) && $number >= $min && $number <= $max;
 }
 
 function checkEmail($string) {

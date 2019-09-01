@@ -779,6 +779,20 @@ align-items: center;
     margin: 0 auto;
 }
 
+/* Mini estilos para el backend */
+
+.containerbackend {
+  padding: 3rem 0;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.containerbackend h2 { margin-bottom: 2rem; }
+
+.containerbackend .card { margin-bottom: .5rem; }
+
+
 
 .titulocarrito {
 text-align: left;

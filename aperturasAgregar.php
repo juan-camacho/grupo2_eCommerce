@@ -11,18 +11,20 @@
   if ($_POST) {
       validateForm();
       if (isValid()) {
-        $_POST['imagen'] = subirArchivo($_FILES['imagen'], APERTURAS_DIR);
+        if (isset($_FILES['imagen'])) {
+          $_POST['imagen'] = subirArchivo($_FILES['imagen'], APERTURAS_IMG_DIR);
+        }
 
         agregarApertura($pdo, $_POST);
-        header('location: index.php');
+        header('location: aperturasListar.php');
       }
   }
 
 ?>
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
-<main>
-  <div class="containerregistro purporange">
+<main class="purporange">
+  <div class="containerbackend">
     <form class="contenedor_ap" method="post" enctype="multipart/form-data">
       <h2 id="letrablanca">/ NUEVA APERTURA</h2>
 
@@ -70,6 +72,7 @@
       </div>
 
       <button class="btn btn-fnegro" type="submit">GUARDAR</button>
+      <a href="aperturasListar.php" class="btn btn-fnegro">VOLVER</a>
     </form>
   </div>
 </main>

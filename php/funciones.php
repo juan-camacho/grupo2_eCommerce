@@ -5,8 +5,8 @@
 
     // Tomamos los datos originales de la imagen.
     $viejoPath = $file["tmp_name"];
-    $viejoName = $file["name"];
-    $extension = pathinfo($viejoName, PATHINFO_EXTENSION);
+    $viejoNombre = $file["name"];
+    $extension = pathinfo($viejoNombre, PATHINFO_EXTENSION);
 
     // Formamos el nuevo nombre y el nuevo path a donde quedará guardada.
     $nuevoNombre = uniqid($prefix) . "." . $extension;
