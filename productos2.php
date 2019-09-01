@@ -1,9 +1,13 @@
-<?php $tittle = "Tienda Babuino - productos"?>
-<!DOCTYPE html>
-<html lang="es">
-<?php require_once("php/mod/head.php")?>
-  <body>
-    <?php require_once("php/mod/header.php"); ?>
+<?php
+  $pageTitle = "Idea COB - Armá tu producto";
+
+  require_once 'php/config/config.php';
+  require_once 'php/models/aperturaModel.php';
+
+  $aperturas = traerAperturas($pdo);
+?>
+<?php require_once("partials/head.php")?>
+<?php require_once("php/mod/header.php"); ?>
         <main>
                       <!-- FULLSLIDER -->
                 <!-- FILTROS -->
@@ -211,118 +215,44 @@
 
 
                     </div>
-
-
-                    <div class="form-group row d-flex justify-content-end">
-                        <button class="btn btn-famarilloblanco" type="submit" name="submit2">Siguiente paso</button>
-                  </div>
                 </div>
               </div>
               </form>
 
-
-
               <form>
                 <div class="form-group row d-flex justify-content-center">
                   <label for="inputEmail3" class="row subtituloproducto">
-                      <h5 class="subtituloppal"> Angulo de apertura </h5>
-                      <h6> Seleccionar el angulo de apertura  </h6>
-                    </label>
-                    <div class="col-12">
-                      <div class="form-check row d-flex justify-content-center">
+                    <h5 class="subtituloppal"> Angulo de apertura </h5>
+                    <h6> Seleccionar el angulo de apertura  </h6>
+                  </label>
+                  <div class="col-12">
+                    <div class="form-check row d-flex justify-content-center">
+
+                      <?php foreach ($aperturas as $apertura) : ?>
                         <div class="btn">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
+                          <input class="form-check-input" type="radio" name="apertura" id="apertura_id_<?php echo $apertura['id'] ?>" value="<?php echo $apertura['id'] ?>">
+                          <label class="form-check-label" for="apertura_id_<?php echo $apertura['id'] ?>">
                             <div class="card card-producto">
-                            <img src="images/empotrablespot.jpg" class="card-img-top" alt="...">
-                            <table class="table ">
-
-                            <tbody>
-                              <tr>
-                                <div class="subtitulocards">
-                                  <h5> SPOT </h5>
-                                </div>
-                              <tr>
-                                <th scope="row">Ángulo</th>
-                                <td> 8º </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"> Flujo aprox </th>
-                                <td> 2700 </td>
-
-                              </tr>
-
-                            </table>
-                          </div>
-
+                              <img src="<?php echo APERTURAS_IMG_PATH . $apertura['imagen'] ?>" class="card-img-top" alt="...">
+                              <table class="table">
+                                <tr>
+                                  <div class="subtitulocards">
+                                    <h5><?php echo $apertura['nombre'] ?> </h5>
+                                  </div>
+                                <tr>
+                                  <th scope="row">Ángulo</th>
+                                  <td> <?php echo $apertura['angulo'] ?>º </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Flujo aprox </th>
+                                  <td> 2700 </td>
+                                </tr>
+                              </table>
+                            </div>
                           </label>
                         </div>
-                        <div class="btn">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
-                            <div class="card card-producto">
-                            <img src="images/empotrablemed.jpg" class="card-img-top" alt="...">
-                            <table class="table ">
-
-                            <tbody>
-                              <tr>
-                                <div class="subtitulocards">
-                                  <h5> MED </h5>
-                                </div>
-                              <tr>
-                                <th scope="row">Ángulo</th>
-                                <td> 8º </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"> Flujo aprox </th>
-                                <td> 2700 </td>
-
-                              </tr>
-
-                            </table>
-                          </div>
-
-                          </label>
-                        </div>
-
-                        <div class="btn">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
-                            <div class="card card-producto">
-                            <img src="images/empotrableflood.jpg" class="card-img-top" alt="...">
-                            <table class="table ">
-
-                            <tbody>
-                              <tr>
-                                <div class="subtitulocards">
-                                  <h5> fLOOD </h5>
-                                </div>
-                              <tr>
-                                <th scope="row">Ángulo</th>
-                                <td> 8º </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"> Flujo aprox </th>
-                                <td> 2700 </td>
-
-                              </tr>
-
-                            </table>
-                          </div>
-
-                          </label>
-                        </div>
-
-
-</div>
-
-
-
-
-
-                  <div class="form-group row d-flex justify-content-end">
-                      <button class="btn btn-famarilloblanco" type="submit" name="submit2">Siguiente paso</button>
-                  </div>
+                      <?php endforeach; ?>
+                    </div>
                   </div>
                 </div>
                 </form>
@@ -421,13 +351,6 @@
                         </div>
 
 
-
-
-
-
-                                          <div class="form-group row d-flex justify-content-end">
-                                              <button class="btn btn-famarilloblanco" type="submit" name="submit2">Siguiente paso</button>
-                                          </div>
                                           </div>
                                         </div>
                                         </form>
@@ -770,9 +693,5 @@
 
 
 
-              </main>
-
-
-
-  </body>
-</html>
+      </main>
+<?php require_once 'partials/footer.php' ?>

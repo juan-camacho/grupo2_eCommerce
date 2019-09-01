@@ -418,7 +418,7 @@ header span i  {
   max-width: 70%;
   margin-bottom: 5rem;
   margin-top: 8rem;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: none;
   margin-right: none;
 }
