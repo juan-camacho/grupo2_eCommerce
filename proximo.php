@@ -1,9 +1,9 @@
 <?php $tittle = "Tienda Babuino - Próximamente"?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/mod/head.php")?>
+<?php require_once("partials/head.php")?>
   <body>
-    <?php require_once("php/mod/header.php"); ?>
+    <?php require_once("partials/header.php"); ?>
     <main>
     <div class="proximo">
         <div class="">
@@ -13,6 +13,6 @@
     </main>
 <!-- Footer -->
 
-<?php require_once("php/mod/footer.php") ?>
+<?php require_once("partials/footer.php") ?>
   </body>
 </html>

@@ -9,7 +9,6 @@ $message = '';
     if (isValid()) {
         session_start();
           if (!empty($_REQUEST)) {
-            $pdo = get_connection();
             $sql = "INSERT INTO users (name, lastname, email, password) VALUES (:name, :lastname, :email, :password)";
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':name', $_REQUEST['name']);

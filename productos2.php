@@ -7,7 +7,7 @@
   $aperturas = traerAperturas($pdo);
 ?>
 <?php require_once("partials/head.php")?>
-<?php require_once("php/mod/header.php"); ?>
+<?php require_once("partials/header.php"); ?>
         <main>
                       <!-- FULLSLIDER -->
                 <!-- FILTROS -->
