@@ -15,7 +15,7 @@ session_start();
       <div class="container">
         <div class="col">
           <div class="row">
-              <h3>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h3>
+              <h6>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h6>
           </div>
           <div class="row">
                <h4> Buenos Aires, Argentina </h4>
@@ -37,34 +37,36 @@ session_start();
             <div class="col">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  <label for="inputName4">Nombre</label>
+                  <input type="text" class="form-control" id="inputName4" placeholder="Nombre">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  <label for="inputSurname4">Contraseña</label>
+                  <input type="text" class="form-control" id="inputSurname4" placeholder="Apellido">
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="inputAddress">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Calle, altura, departamento">
               </div>
               <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="inputAddress2">Localidad</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Localidad">
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  <label for="inputEmail4">E-mail</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  <label for="inputPassword4">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-famarilloblanco">Sign in</button>
+              <div class="form-row d-flex justify-content-center my-2">
+                  <button class="btn btn-famarilloblanco flex-grow-1" type="submit" name="submit"> Cambiar datos </button>
+              </div>
             </div>
 
           </form>
@@ -92,19 +94,18 @@ session_start();
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 text-center d-flex align-items-center  justify-content-between">
-                            <div class="col-4 text-center">
-                                <h5> Precio </h5>
-                                <h6> $200</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <h5> Cantidad </h5>
-                                <h6> $200</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <h5> Total </h5>
-                                <h6> $200</h6>
-                            </div>
-
+                        <div class="col-4 text-center">
+                            <h5> Fecha </h5>
+                            <h6> 15.08.2019 </h6>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5> Status </h5>
+                            <h6> Entregado </h6>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5> Total </h5>
+                            <h6> $200</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,18 +124,18 @@ session_start();
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 text-center d-flex align-items-center  justify-content-between">
-                            <div class="col-4 text-center">
-                                <h5> Precio </h5>
-                                <h6> $200</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <h5> Cantidad </h5>
-                                <h6> $200</h6>
-                            </div>
-                            <div class="col-4 text-center">
-                                <h5> Total </h5>
-                                <h6> $200</h6>
-                            </div>
+                        <div class="col-4 text-center">
+                            <h5> Fecha </h5>
+                            <h6> 15.08.2019 </h6>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5> Status </h5>
+                            <h6> Entregado </h6>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5> Total </h5>
+                            <h6> $200</h6>
+                        </div>
 
                     </div>
                 </div>
@@ -154,18 +155,19 @@ session_start();
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 text-center d-flex align-items-center  justify-content-between">
-                                <div class="col-4 text-center">
-                                    <h5> Precio </h5>
-                                    <h6> $200</h6>
-                                </div>
-                                <div class="col-4 text-center">
-                                    <h5> Cantidad </h5>
-                                    <h6> $200</h6>
-                                </div>
-                                <div class="col-4 text-center">
-                                    <h5> Total </h5>
-                                    <h6> $200</h6>
-                                </div>
+                            <div class="col-4 text-center">
+                                <h5> Fecha </h5>
+                                <h6> 15.08.2019 </h6>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h5> Status </h5>
+                                <h6> Entregado </h6>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h5> Total </h5>
+                                <h6> $200</h6>
+                            </div>
+
 
                         </div>
                     </div>

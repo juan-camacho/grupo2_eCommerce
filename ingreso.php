@@ -19,16 +19,16 @@ if ($_POST) {
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/mod/head.php")?>
+<?php require_once("partials/head.php")?>
 <body>
-    <?php require_once("php/mod/header.php")?>
+    <?php require_once("partials/header.php")?>
     <main>
         <div class="containeringreso d-flex align-items-center limaazul">
 
             <form class="container formssmall" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <h2>/ LOG IN</h2>
-                <div class="form-row mb-3">
-                    <div class="form-control threed">
+                <div class="form-row">
+                    <div class="form-control threed  my-2">
                         <i class="fas fa-envelope icon"></i>
                         <input type="text" placeholder="Correo" name="email" >
                     </div>
@@ -36,8 +36,8 @@ if ($_POST) {
                 <?php if ($_POST): ?>
                     <span class="error">Usuario no encontrado</span>
                 <?php endif ?>
-                <div class="form-row mb-3">
-                    <div class="form-control threed">
+                <div class="form-row">
+                    <div class="form-control threed  my-2">
                         <i class="fas fa-key icon"></i>
                         <input type="password" placeholder="Contraseña" name="password">
                     </div>
@@ -46,10 +46,10 @@ if ($_POST) {
                 <div class="form-row d-flex justify-content-end mb-1">
                     <span>Olvidaste tu contraseña?</span>
                 </div>
-                <div class="form-row d-flex justify-content-center mb-1">
+                <div class="form-row d-flex justify-content-center my-2">
                     <button class="btn btn-famarilloblanco flex-grow-1" type="submit" name="submit">Ingresa</button>
                 </div>
-                <div class="form-row d-flex justify-content-center mb-1 f700">
+                <div class="form-row d-flex justify-content-center my-2">
                     <label>
                         <input type="checkbox" checked="checked" name="recuerdame"> Recuerdame!
                     </label>
@@ -58,6 +58,6 @@ if ($_POST) {
         </div>
     </main>
     <!-- Footer -->
-    <?php require_once("php/mod/footer.php") ?>
+    <?php require_once("partials/footer.php") ?>
 </body>
 </html>

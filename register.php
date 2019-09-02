@@ -4,11 +4,11 @@ session_start();
 require_once 'php/forms/projectRegisterForm.php';
 require_once 'php/models/projectModel.php';
 $message = '';
-  if ($_REQUEST) {
+if ($_REQUEST) {
     validateForm();
     if (isValid()) {
         session_start();
-          if (!empty($_REQUEST)) {
+        if (!empty($_REQUEST)) {
             $sql = "INSERT INTO users (name, lastname, email, password) VALUES (:name, :lastname, :email, :password)";
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':name', $_REQUEST['name']);
@@ -17,71 +17,85 @@ $message = '';
             $password = password_hash($_REQUEST['password'], PASSWORD_DEFAULT);
             $stmt->bindParam(':password', $password);
             if ($stmt->execute()) {
-              $message = 'usuario creado';
-              header('location: registro-exitoso.php');
+                $message = 'usuario creado';
+                header('location: registro-exitoso.php');
             } else {
-              $message = 'El email es ya se encuentra registrado';
+                $message = 'El email es ya se encuentra registrado';
             }
         }
     }
-  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<?php require_once("php/mod/head.php")?>
+<?php require_once("partials/head.php")?>
 <body>
-<?php require_once("php/mod/header.php")?>
-<main>
-        <div class="containerregistro">
-           <form class="contenedor_ap" accion="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+    <?php require_once("partials/header.php")?>
+    <main>
+        <div class="containeringreso d-flex align-items-center bg-black">
+            <form class="container formssmall" accion="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
-               <h2 id="letrablanca">/ REGISTRO</h2>
-               <?php if(!empty($message)): ?>
-                   <p class="error"> <?= $message ?></p>
-               <?php endif; ?>
-               <div class="input_contenedor_ap threedamarillo">
-                <i class="fas fa-user icon" style="color: black"></i>
-                <input type="text" placeholder="nombre" name="name" value"<?= old('name'); ?>">
-               </div>
-               <?php if (hasError('name')) : ?>
-                   <span class="error"><?= getError('name') ?></span><br>
-               <?php endif ?>
-
-               <div class="input_contenedor_ap threedamarillo">
-                <i class="fas fa-user icon" style="color: black"></i>
-                <input type="text" placeholder="apellido" name="lastname" value"<?= old('lastaname'); ?>">
-               </div>
-               <?php if (hasError('lastname')) : ?>
-                 <span class="error"><?= getError('lastname') ?></span><br>
+                <h2 class="letrablanca">/ REGISTRO</h2>
+                <?php if(!empty($message)): ?>
+                    <p class="error"> <?= $message ?></p>
+                <?php endif; ?>
+                <div class="form-row">
+                    <div class="form-control form-control-light threed threed-blanco  my-2">
+                        <i class="fas fa-user icon" style="color: white"></i>
+                        <input class="letrablanca" type="text" placeholder="Nombre" name="name" value"<?= old('name'); ?>">
+                    </div>
+                </div>
+                <?php if (hasError('name')) : ?>
+                    <span class="error"><?= getError('name') ?></span><br>
                 <?php endif ?>
 
-                <div class="input_contenedor_ap threedamarillo">
-                        <i class="fas fa-envelope icon" style="color: black"></i>
-                    <input type="text" placeholder="Email" name="email" value"<?= old('email'); ?>">
+                <div class="form-row">
+                    <div class="form-control form-control-light threed threed-blanco my-2">
+                        <i class="fas fa-user icon"  style="color: white"></i>
+                        <input class="letrablanca" type="text" placeholder="Apellido" name="lastname" value"<?= old('lastaname'); ?>">
+                    </div>
+                </div>
+                <?php if (hasError('lastname')) : ?>
+                    <span class="error"><?= getError('lastname') ?></span><br>
+                <?php endif ?>
+
+                <div class="form-row">
+                    <div class="form-control form-control-light threed threed-blanco  my-2">
+                        <i class="fas fa-envelope icon"  style="color: white"></i>
+                        <input class="letrablanca" type="text" placeholder="Email" name="E-mail" value"<?= old('email'); ?>">
+                    </div>
                 </div>
                 <?php if (hasError('email')) : ?>
-                <span class="error"><?= getError('email') ?></span> <br>
+                    <span class="error"><?= getError('email') ?></span> <br>
                 <?php endif ?>
 
-                <div class="input_contenedor_ap threedamarillo">
-                    <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña" name="password">
+                <div class="form-row">
+                    <div class="form-control  form-control-light threed threed-blanco my-2">
+                        <i class="fas fa-key icon"  style="color: white"></i>
+                        <input class="letrablanca" type="password" placeholder="Contraseña" name="password">
+                    </div>
                 </div>
                 <?php if (hasError('password')) : ?>
-                <span class="error"><?= getError('password') ?></span> <br>
+                    <span class="error"><?= getError('password') ?></span> <br>
                 <?php endif ?>
-                <div class="input_contenedor_ap threedamarillo">
-                    <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Repetir contraseña" name="password2">
-                </div>
-                    <button class="btn btn-fnegro" type="submit" value="submit">Registrarme</button>
-                    <div class="divformu">
-                        <span>Ya estas registrado? </span> <a href="Ingreso.php" class="link"> Log in</a>
+                <div class="form-row">
+                    <div class="form-control form-control-light threed threed-blanco  my-2">
+                        <i class="fas fa-key icon"  style="color: white"></i>
+                        <input class="letrablanca" type="password" placeholder="Repetir contraseña" name="password2">
                     </div>
+                </div>
+                <div class="form-row d-flex justify-content-center my-2">
+                    <button class="btn btn-fnegro flex-grow-1" type="submit" value="submit">Registrarme</button>
+                </div>
+                <div class="form-row d-flex justify-content-center mb-1">
+                    <label class="form-row d-flex justify-content-center my-2 letrablanca ">
+                        <span>Ya estas registrado? </span> <a href="Ingreso.php" style="text-decoration: underline">  Log in</a>
+                    </label>
+                </div>
             </form>
-</div>
-</main>
-<!-- Footer -->
-<?php require_once("php/mod/footer.php") ?>
-  </body>
+        </div>
+    </main>
+    <!-- Footer -->
+    <?php require_once("partials/footer.php") ?>
+</body>
 </html>
