@@ -33,7 +33,7 @@ session_start();
           <ul>
             <li>
               <h5> Nombre </h5>
-              <h6> Florencia Agustina Sanchez </h6>
+              <h6>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h6>
             </li>
             <li>
               <h5> Edad </h5>
@@ -41,11 +41,11 @@ session_start();
             </li>
             <li>
               <h5> Mail </h5>
-              <h6> fagustinasanchez@gmail.com </h6>
+              <h6>  <?= $_SESSION['user']['email']?> </h6>
             </li>
             <li>
               <h5> Algo </h5>
-              <h6> fagustinasanchez@gmail.com </h6>
+              <h6> tarjetas  </h6>
             </li>
           </ul>
          </div>

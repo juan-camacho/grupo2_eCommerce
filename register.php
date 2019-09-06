@@ -1,15 +1,13 @@
 <?php $tittle = "IDEA COB - REGISTRO"?>
 <?php
-session_start();
 require_once 'php/forms/projectRegisterForm.php';
 require_once 'php/models/projectModel.php';
 $message = '';
 if ($_REQUEST) {
     validateForm();
     if (isValid()) {
-        session_start();
         if (!empty($_REQUEST)) {
-            $sql = "INSERT INTO users (name, lastname, email, password) VALUES (:name, :lastname, :email, :password)";
+            $sql = "INSERT INTO users (name, lastname, email, password) VALUES ( :name, :lastname, :email, :password)";
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':name', $_REQUEST['name']);
             $stmt->bindParam(':lastname', $_REQUEST['lastname']);
@@ -17,7 +15,13 @@ if ($_REQUEST) {
             $password = password_hash($_REQUEST['password'], PASSWORD_DEFAULT);
             $stmt->bindParam(':password', $password);
             if ($stmt->execute()) {
-                $message = 'usuario creado';
+              session_start();
+              $sql = 'select * from users where email = :email limit 1';
+              $stmt = $pdo->prepare($sql);
+              $stmt->bindvalue('email', $_POST['email']);
+              $stmt->execute();
+              $user = $stmt->fetch(PDO::FETCH_ASSOC);
+              $_SESSION['user'] = $user;
                 header('location: registro-exitoso.php');
             } else {
                 $message = 'El email es ya se encuentra registrado';
@@ -33,7 +37,7 @@ if ($_REQUEST) {
     <?php require_once("partials/header.php")?>
     <main>
         <div class="containeringreso d-flex align-items-center bg-black">
-            <form class="container formssmall" accion="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+            <form class="container formssmall" method="post">
 
                 <h2 class="letrablanca">/ REGISTRO</h2>
                 <?php if(!empty($message)): ?>
@@ -62,7 +66,7 @@ if ($_REQUEST) {
                 <div class="form-row">
                     <div class="form-control form-control-light threed threed-blanco  my-2">
                         <i class="fas fa-envelope icon"  style="color: white"></i>
-                        <input class="letrablanca" type="text" placeholder="Email" name="E-mail" value"<?= old('email'); ?>">
+                        <input class="letrablanca" type="text" placeholder="Email" name="email" value"<?= old('email'); ?>">
                     </div>
                 </div>
                 <?php if (hasError('email')) : ?>

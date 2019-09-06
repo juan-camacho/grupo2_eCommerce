@@ -1,7 +1,7 @@
 <?php $tittle = "IDEA COB - Registro exitoso"?>
 <?php
 session_start();
-$_SESSION['users'] = $users;
+
 
  ?>
 <!DOCTYPE html>
@@ -12,8 +12,7 @@ $_SESSION['users'] = $users;
 <main>
     <div class="containerregistro">
       <h3>¡Gracias por registrarte! </h3>
-    <h3>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h3>
-
+      <h3> <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?></h3>
 <h5><a href="index.php" > Continuar navegando</a></h5>
 
         </div>
