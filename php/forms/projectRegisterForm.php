@@ -14,7 +14,7 @@
     }
 
     if ( !checkpass(old('password'))) {
-        addError('password', 'La Contraseña debe tener Una mayuscula, una minuscula, un numero y mayor de 6 digitos.');
+        addError('password', 'La Contraseña debe contener: Una MAYUSCULA, Una minuscula, Un numero (1) y Debe ser mayor de 6 digitos.');
     }
 
     if ( !checkMatch(old('password'), old('password2'))) {

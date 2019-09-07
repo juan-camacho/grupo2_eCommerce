@@ -8,5 +8,6 @@ const DB_PASS = 'CONTRASEÑA';
 const APP_DIR = __DIR__ . '/../../' ;
 const APERTURAS_IMG_DIR = APP_DIR . '/data/aperturas/';
 const APERTURAS_IMG_PATH = 'data/aperturas/';
-
+const TDECOLOR_IMG_DIR = APP_DIR . '/data/tdecolor/';
+const TDECOLOR_IMG_PATH = 'data/tdecolor/';
 ?>

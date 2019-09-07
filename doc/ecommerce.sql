@@ -309,6 +309,19 @@ ALTER TABLE `marco`
 ALTER TABLE `nucleos`
   ADD CONSTRAINT `nucleos_ibfk_1` FOREIGN KEY (`familia_id`) REFERENCES `familia` (`id`);
 
+  ALTER TABLE `ecommerce`.`aperturas`  CHANGE COLUMN `imagenapertura` `imagen` VARCHAR(255) NOT NULL ;
+  CREATE TABLE `dh_ecommerce`;
+  ALTER TABLE `dh_ecommerce`.`products` DROP FOREIGN KEY `products_ibfk_4`;
+  ALTER TABLE `dh_ecommerce`.`products` DROP INDEX `aperturas_id` ;
+  ALTER TABLE `dh_ecommerce`.`aperturas` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ;
+  ALTER TABLE `dh_ecommerce`.`products`
+  ADD CONSTRAINT `products_ibfk_4`
+    FOREIGN KEY (`id`)
+    REFERENCES `dh_ecommerce`.`aperturas` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+
+
 --
 -- Filtros para la tabla `products`
 --
