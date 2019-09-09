@@ -1,20 +1,20 @@
 <?php
 
-  $pageTitle = 'IDEA COB | Listar Aperturas';
+  $pageTitle = 'IDEA COB | Listar Temperatura';
 
   require_once 'php/config/config.php';
   require_once 'php/models/tdecolorModel.php';
 
-  $aperturas = traerTdecolor($pdo);
+  $tdecolor = traerTdecolor($pdo);
 
 ?>
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
 <main class="purporange">
   <div class="containerbackend">
-    <h2 id="letrablanca">/ LISTADO DE APERTURAS</h2>
+    <h2 id="letrablanca">/ LISTADO DE tempratura</h2>
     <p>
-      <a href="aperturasAgregar.php" class="btn btn-famarilloblanco">Agregar nueva apertura</a>
+      <a href="tdecolorAgregar.php" class="btn btn-famarilloblanco">Agregar nueva Temperatura</a>
     </p>
 
     <div class="row" style="width: 100%">

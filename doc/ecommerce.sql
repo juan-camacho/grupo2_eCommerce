@@ -85,15 +85,15 @@ CREATE TABLE `fuente` (
 
 CREATE TABLE `marco` (
   `id` int(11) NOT NULL,
-  `ancho` int(11) DEFAULT NULL,
-  `alto` int(11) DEFAULT NULL,
+   `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `precio` int(11) DEFAULT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `prof` int(11) DEFAULT NULL,
   `material` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+	`ancho` int(11) DEFAULT NULL,
+  `alto` int(11) DEFAULT NULL,
   `ip` int(11) DEFAULT NULL,
-  `imagenmarco` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `familia_id` int(11) DEFAULT NULL,
-  `precio` int(11) DEFAULT NULL
+  `familia_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -165,13 +165,18 @@ CREATE TABLE `products` (
 --
 
 CREATE TABLE `tdecolor` (
-  `id` int(11) NOT NULL,
+  `id` int(11) AUTO_INCREMENT primary KEY,
   `temperatura` int(11) NOT NULL,
-  `unidad` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `unidad` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
 -- --------------------------------------------------------
+--
+-- Indices de la tabla `tdecolor`
+--
+ALTER TABLE `tdecolor`
 
+  ADD UNIQUE KEY `temperatura` (`temperatura`);
 --
 -- Estructura de tabla para la tabla `users`
 --
@@ -263,12 +268,7 @@ ALTER TABLE `products`
   ADD KEY `tdecolor_id` (`tdecolor_id`),
   ADD KEY `marco_id` (`marco_id`);
 
---
--- Indices de la tabla `tdecolor`
---
-ALTER TABLE `tdecolor`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `temperatura` (`temperatura`);
+
 
 --
 -- Indices de la tabla `users`
@@ -309,17 +309,8 @@ ALTER TABLE `marco`
 ALTER TABLE `nucleos`
   ADD CONSTRAINT `nucleos_ibfk_1` FOREIGN KEY (`familia_id`) REFERENCES `familia` (`id`);
 
-  ALTER TABLE `ecommerce`.`aperturas`  CHANGE COLUMN `imagenapertura` `imagen` VARCHAR(255) NOT NULL ;
-  CREATE TABLE `dh_ecommerce`;
-  ALTER TABLE `dh_ecommerce`.`products` DROP FOREIGN KEY `products_ibfk_4`;
-  ALTER TABLE `dh_ecommerce`.`products` DROP INDEX `aperturas_id` ;
-  ALTER TABLE `dh_ecommerce`.`aperturas` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ;
-  ALTER TABLE `dh_ecommerce`.`products`
-  ADD CONSTRAINT `products_ibfk_4`
-    FOREIGN KEY (`id`)
-    REFERENCES `dh_ecommerce`.`aperturas` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE RESTRICT;
+
+
 
 
 --
@@ -335,6 +326,15 @@ ALTER TABLE `products`
   ADD CONSTRAINT `products_ibfk_7` FOREIGN KEY (`marco_id`) REFERENCES `marco` (`id`);
 COMMIT;
 
+ ALTER TABLE `ecommerce`.`products` DROP FOREIGN KEY `products_ibfk_4`;
+  ALTER TABLE `ecommerce`.`products` DROP INDEX `aperturas_id` ;
+  ALTER TABLE `ecommerce`.`aperturas` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ;
+  ALTER TABLE `ecommerce`.`products`
+  ADD CONSTRAINT `products_ibfk_4`
+    FOREIGN KEY (`id`)
+    REFERENCES `ecommerce`.`aperturas` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

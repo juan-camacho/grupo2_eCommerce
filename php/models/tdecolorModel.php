@@ -18,14 +18,13 @@
 
   function agregarTdecolor($pdo, $data) {
     $stmt = $pdo->prepare(
-      "INSERT INTO tdecolor (id, temperatura, unidad, imagen) VALUES (NULL, :temperatura, :unidad, :imagen);"
+      "INSERT INTO tdecolor (temperatura, unidad, imagen) VALUES (:temperatura, :unidad, :imagen);"
     );
 
     //$stmt->bindParam(':familia_id', $data['familia_id']);
     $stmt->bindParam(':temperatura', $data['temperatura']);
     $stmt->bindParam(':unidad', $data['unidad']);
     $stmt->bindParam(':imagen', $data['imagen']);
-
     $stmt->execute();
     return $pdo->lastInsertId();
   }
@@ -33,7 +32,6 @@
   function actualizarTdecolor($pdo, $data) {
     $stmt = $pdo->prepare(
       "UPDATE tdecolor SET
-        id = NULL,
         temperatura = :temperatura,
         unidad = :unidad,
         imagen = :imagen

@@ -12,7 +12,7 @@
       validateForm();
       if (isValid()) {
         if (isset($_FILES['imagen'])) {
-          $_POST['imagen'] = subirArchivo($_FILES['imagen'], TCOLOR_IMG_DIR);
+          $_POST['imagen'] = subirArchivo($_FILES['imagen'], TDECOLOR_IMG_DIR);
         }
 
         agregarTdecolor($pdo, $_POST);
@@ -41,7 +41,7 @@
       <div class="form-row mb-3">
         <div class="form-control threed">
           <i class="fas fa-hashtag icon"></i>
-          <input type="number" placeholder="Temperatura" name="temperatura" value="<?= old('temperatura') ?>">
+          <input type="number" placeholder="Temperatura, Ejemplo 2700" name="temperatura" value="<?= old('temperatura') ?>">
         </div>
         <?php if (hasError('temperatura')) : ?>
           <span class="error" style="color: white;"> <?= getError('temperatura') ?></span> <br>
