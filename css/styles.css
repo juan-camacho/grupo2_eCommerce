@@ -998,3 +998,20 @@ a.link {
 #containerbackend {
   padding-top: 8rem;
   }
+
+
+.subtitleheaderAdmin:hover {
+    background-color: grey;
+    }
+
+
+.titleHeaderAdmin {
+    font-size: 1.1rem;
+    font-weight: 600;
+    }
+
+    .subtitleheaderAdmin {
+        font-weight: 400;
+        line-height: 80%;
+        font-size: 1rem;
+        }

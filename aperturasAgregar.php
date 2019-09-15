@@ -48,7 +48,7 @@
          <div class="form-row mb-3">
            <div class="form-control threed">
              <i class="fas fa-align-left icon"></i>
-             <input type="text" placeholder="nombre" name="nombre" value="<?= old('nombre') ?>">
+             <input type="text" placeholder="Nombre" name="nombre" value="<?= old('nombre') ?>">
            </div>
            <?php if (hasError('nombre')) : ?>
              <span class="error"> <?= getError('nombre') ?></span> <br>
@@ -58,7 +58,7 @@
          <div class="form-row mb-3">
            <div class="form-control threed">
              <i class="fas fa-hashtag icon"></i>
-             <input type="number" placeholder="angulo" name="angulo" value="<?= old('angulo') ?>">
+             <input type="number" placeholder="Ángulo" name="angulo" value="<?= old('angulo') ?>">
            </div>
            <?php if (hasError('angulo')) : ?>
              <span class="error"> <?= getError('angulo') ?></span> <br>
@@ -68,7 +68,7 @@
          <div class="form-row mb-3">
            <div class="form-control threed">
              <i class="fas fa-image icon"></i>
-             <input type="file" placeholder="imagen" name="imagen" value="<?= old('imagen') ?>">
+             <input type="file" placeholder="Imagen" name="imagen" value="<?= old('imagen') ?>">
            </div>
            <?php if (hasError('imagen')) : ?>
              <span class="error" style="color: white;"> <?= getError('imagen') ?></span> <br>
