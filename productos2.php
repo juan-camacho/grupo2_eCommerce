@@ -4,9 +4,11 @@ $pageTitle = "Idea COB - Armá tu producto";
 require_once 'php/config/config.php';
 require_once 'php/models/aperturaModel.php';
 require_once 'php/models/tdecolorModel.php';
+require_once 'php/models/marcoModel.php';
 
 $aperturas = traerAperturas($pdo);
 $tdecolor = traerTdecolor($pdo);
+$marco = traerMarco($pdo);
 ?>
 <?php require_once("partials/head.php")?>
 <?php require_once("partials/header.php"); ?>
@@ -302,28 +304,29 @@ $tdecolor = traerTdecolor($pdo);
 
                           <form>
                             <div class="form-group row d-flex justify-content-center">
-                              <label for="inputEmail3" class="row subtituloproducto d-flex justify-content-start">
-                                <h5 class="subtituloppal"> Marco </h5>
-                                <h6> Lorem ipsum lorem ipsum </h6>
+                              <label for="inputEmail3" class="row subtituloproducto">
+                                <h5 class="subtituloppal"> MARCOS </h5>
+                                <h6> Seleccionar el Marco </h6>
                               </label>
                               <div class="col-12">
                                 <div class="form-check row d-flex justify-content-center">
+                                    <?php foreach ($marco as $mar) : ?>
                                   <div class="btn">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
+                                    <input class="form-check-input" type="radio" name="marco" id="gridRadios1<?php echo $mar['id'] ?>" value="<?php echo $mar['id'] ?>">
+                                    <label class="form-check-label" for="gridRadios1<?php echo $mar['id'] ?>">
                                       <div class="card card-producto">
-                                        <img src="images/marcor.jpg" class="card-img-top" alt="...">
+                                        <img src="<?php echo MARCO_IMG_PATH . $mar['imagen'] ?>" class="card-img-top" alt="...">
                                         <table class="table ">
-
                                           <tbody>
                                             <tr>
                                               <div class="subtitulocards">
-                                                <h5> Redondo </h5>
+                                                <h5><?php echo $mar['nombre'] ?>  </h5>
                                               </div>
                                               <tr>
                                                 <th scope="row"> Dimensión </th>
-                                                <td>Mark</td>
+                                                <td> <?php echo $mar['dimension'] ?> </td>
                                               </tr>
+
 
                                             </tbody>
                                           </table>
@@ -331,311 +334,12 @@ $tdecolor = traerTdecolor($pdo);
 
                                       </label>
                                     </div>
-                                    <div class="btn">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                      <label class="form-check-label" for="gridRadios1">
-                                        <div class="card card-producto">
-                                          <img src="images/marcoc.jpg" class="card-img-top" alt="...">
-                                          <table class="table ">
-
-                                            <tbody>
-                                              <tr>
-                                                <div class="subtitulocards">
-                                                  <h5> Cuadrado </h5>
-                                                </div>
-                                                <tr>
-                                                  <th scope="row"> Dimensión </th>
-                                                  <td>Mark</td>
-                                                </tr>
-
-                                              </tbody>
-                                            </table>
-                                          </div>
-
-                                        </label>
+                                      <?php endforeach; ?>
                                       </div>
-
-                                      <div class="btn">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                          <div class="card card-producto">
-                                            <img src="images/marcorprof.jpg" class="card-img-top" alt="...">
-                                            <table class="table ">
-
-                                              <tbody>
-                                                <tr>
-                                                  <div class="subtitulocards">
-                                                    <h5> Redondo Recedido </h5>
-                                                  </div>
-                                                  <tr>
-                                                    <th scope="row"> Dimension </th>
-                                                    <td>Mark</td>
-                                                  </tr>
-
-                                                </tbody>
-                                              </table>
+                                      <button onclick="carrito.php" type="button" class="btn btn-famarilloblanco"> Agregar al carrito</button>
+                                    </div>
+                                  </div>
+                                </form>
                                             </div>
-
-                                          </label>
-                                        </div>
-                                        <div class="btn">
-                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                          <label class="form-check-label" for="gridRadios1">
-                                            <div class="card card-producto">
-                                              <img src="images/marcocprof.jpg" class="card-img-top" alt="...">
-                                              <table class="table ">
-
-                                                <tbody>
-                                                  <tr>
-                                                    <div class="subtitulocards">
-                                                      <h5> Cuadrado Recedido </h5>
-                                                    </div>
-                                                    <tr>
-                                                      <th scope="row">Potencia</th>
-                                                      <td>Mark</td>
-                                                    </tr>
-
-                                                  </tbody>
-                                                </table>
-                                              </div>
-
-                                            </label>
-                                          </div>
-
-                                          <div class="btn">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                            <label class="form-check-label" for="gridRadios1">
-                                              <div class="card card-producto">
-                                                <img src="images/marcortrimless.jpg" class="card-img-top" alt="...">
-                                                <table class="table ">
-
-                                                  <tbody>
-                                                    <tr>
-                                                      <div class="subtitulocards">
-                                                        <h5> Redondo Trimless </h5>
-                                                      </div>
-                                                      <tr>
-                                                        <th scope="row">Dimensión</th>
-                                                        <td>Mark</td>
-                                                      </tr>
-                                                    </tbody>
-                                                  </table>
-                                                </div>
-
-                                              </label>
-                                            </div>
-
-                                            <div class="btn">
-                                              <input class="form-check-input" type="radio"  value="option1">
-                                              <label class="form-check-label" for="gridRadios1">
-                                                <div class="card card-producto">
-                                                  <img src="images/marcoctrimless.jpg" class="card-img-top" alt="...">
-                                                  <table class="table ">
-
-                                                    <tbody>
-                                                      <tr>
-                                                        <div class="subtitulocards">
-                                                          <h5> Cuadrado Trimless </h5>
-                                                        </div>
-                                                        <tr>
-                                                          <th scope="row"> Dimensión </th>
-                                                          <td>Mark</td>
-                                                        </tr>
-
-                                                      </tbody>
-                                                    </table>
-                                                  </div>
-
-                                                </label>
-                                              </div>
-                                              <div class="btn">
-                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="gridRadios1">
-                                                  <div class="card card-producto">
-                                                    <img src="images/marcorsuperprof.jpg" class="card-img-top" alt="...">
-                                                    <table class="table">
-
-                                                      <tbody>
-                                                        <tr>
-                                                          <div class="subtitulocards">
-                                                            <h5> Redondo Rec. Prof. </h5>
-                                                          </div>
-                                                          <tr>
-                                                            <th scope="row"> Dimensión </th>
-                                                            <td>Mark</td>
-                                                          </tr>
-
-                                                        </tbody>
-                                                      </table>
-                                                    </div>
-
-                                                  </label>
-                                                </div>
-
-                                                <div class="btn">
-                                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                                  <label class="form-check-label" for="gridRadios1">
-                                                    <div class="card card-producto">
-                                                      <img src="images/marcoip44.jpg" class="card-img-top" alt="...">
-                                                      <table class="table">
-
-                                                        <tbody>
-                                                          <tr>
-                                                            <div class="subtitulocards">
-                                                              <h5> Redondo IP44 </h5>
-                                                            </div>
-                                                            <tr>
-                                                              <th scope="row"> Dimensión </th>
-                                                              <td>Mark</td>
-                                                            </tr>
-
-                                                          </tbody>
-                                                        </table>
-                                                      </div>
-
-                                                    </label>
-                                                  </div>
-
-                                                  <div class="btn">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                                    <label class="form-check-label" for="gridRadios1">
-                                                      <div class="card card-producto">
-                                                        <img src="images/marcordoble.jpg" class="card-img-top" alt="...">
-                                                        <table class="table">
-
-                                                          <tbody>
-                                                            <tr>
-                                                              <div class="subtitulocards">
-                                                                <h5> Doble </h5>
-                                                              </div>
-                                                              <tr>
-                                                                <th scope="row"> Dimensión </th>
-                                                                <td>Mark</td>
-                                                              </tr>
-
-                                                            </tbody>
-                                                          </table>
-                                                        </div>
-
-                                                      </label>
-                                                    </div>
-
-
-                                                  </div>
-
-
-
-                                                  <div class="form-group row d-flex justify-content-end">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-famarilloblanco" data-toggle="modal" data-target="#exampleModalCenter">
-                                                      FINALIZAR
-                                                    </button>
-
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                      <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                          <div class="modal-header">
-                                                            <div class="col">
-                                                              <div class="row">
-                                                                <h4> FEDRO</h4>
-
-                                                              </div>
-                                                              <div class="row">
-                                                                <H5> Empotrable LED de iluminación directa. </H5>
-
-                                                              </div>
-
-                                                            </div>
-
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                          </div>
-                                                          <div class="modal-body d-flex justify-content-center">
-                                                            <img src="images/marcor.jpg" alt="">
-                                                          </div>
-                                                          <div class="modal-body d-flex justify-content-center">
-                                                            <table class="table productopuntual">
-                                                              <thead>
-                                                                <tr>
-                                                                  <th scope="col"></th>
-                                                                  <th scope="col"></th>
-
-                                                                </tr>
-                                                              </thead>
-                                                              <tbody>
-                                                                <tr>
-                                                                  <th scope="row">Código</th>
-                                                                  <td>06.71.1101.03</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Incluye</th>
-                                                                  <td>LE</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">lED</th>
-                                                                  <td>CREE</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Dimerización</th>
-                                                                  <td>TRIAC</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Pòtencia</th>
-                                                                  <td>3.2W</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Tº Color</th>
-                                                                  <td>2700K</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">CRI</th>
-                                                                  <td>80</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">IP</th>
-                                                                  <td>20</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Color</th>
-                                                                  <td>Blanco</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Dimensiones</th>
-                                                                  <td>Ø60x44mm</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <th scope="row">Cut-out</th>
-                                                                  <td>Ø53mm</td>
-                                                                </tr>
-                                                              </tbody>
-                                                            </table>
-
-                                                          </div>
-                                                          <div class="modal-footer">
-                                                            <div class="precio">
-                                                              <h4> $200 ARS</h4>
-                                                            </div>
-                                                            <div>
-                                                              <button onclick="carrito.php" type="button" class="btn btn-famarilloblanco"> Agregar al carrito</button>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-                                                  </div>
-                                                </div>
-                                              </form>
-
-
-
-                                            </div>
-
-
-
-
-
                                           </main>
                                           <?php require_once 'partials/footer.php' ?>

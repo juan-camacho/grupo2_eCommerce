@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS ecommerce;
+CREATE DATABASE ecommerce;
+use ecommerce;
 -- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
@@ -84,15 +87,10 @@ CREATE TABLE `fuente` (
 --
 
 CREATE TABLE `marco` (
-  `id` int(11) NOT NULL,
-   `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
- `precio` int(11) DEFAULT NULL,
+   `id` int(11) AUTO_INCREMENT primary KEY,
+  `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `imagen` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `prof` int(11) DEFAULT NULL,
-  `material` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-	`ancho` int(11) DEFAULT NULL,
-  `alto` int(11) DEFAULT NULL,
-  `ip` int(11) DEFAULT NULL,
+  `dimension` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `familia_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -233,7 +231,6 @@ ALTER TABLE `fuente`
 -- Indices de la tabla `marco`
 --
 ALTER TABLE `marco`
-  ADD PRIMARY KEY (`id`),
   ADD KEY `familia_id` (`familia_id`);
 
 --
@@ -268,6 +265,15 @@ ALTER TABLE `products`
   ADD KEY `tdecolor_id` (`tdecolor_id`),
   ADD KEY `marco_id` (`marco_id`);
 
+--
+-- Indices de la tabla `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` int(11) AUTO_INCREMENT primary KEY,
+  `admin` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `comprador` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 --
