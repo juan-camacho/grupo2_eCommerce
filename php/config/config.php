@@ -1,9 +1,9 @@
 <?php
 
-const DB_HOST = 'SERVIDOR';
-const DB_NAME = 'BASEDATOS';
-const DB_USER = 'USUARIO';
-const DB_PASS = 'CONTRASEÑA';
+const DB_HOST = 'localhost';
+const DB_NAME = 'ecommerce';
+const DB_USER = 'root';
+const DB_PASS = '';
 
 const APP_DIR = __DIR__ . '/../../' ;
 const APERTURAS_IMG_DIR = APP_DIR . '/data/aperturas/';
