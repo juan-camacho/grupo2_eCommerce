@@ -21,7 +21,7 @@
        <div class="contenedor_ap">
      <h3 class="pb-3"id="letrablanca">/ LISTADO DE MARCO</h3>
      <p>
-       <a href="aperturasAgregar.php" class="btn btn-famarilloblanco">Agregar Nuevo Marco</a>
+       <a href="marcoAgregar.php" class="btn btn-famarilloblanco">Agregar Nuevo Marco</a>
      </p>
        <?php foreach ($marcos as $marco) : ?>
        <div class="col col-xs-12 col-sm-6 col-md-3">

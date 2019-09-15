@@ -12,5 +12,5 @@
     //@TODO Borrar la imagen del disco rígido si existe
   }
 
-  header('location: aperturasListar.php');
+  header('location: marcoListar.php');
 ?>
