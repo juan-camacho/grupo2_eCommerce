@@ -24,7 +24,7 @@ if ($_POST) {
 <body>
     <?php require_once("partials/header.php")?>
     <main>
-        <div class="containeringreso d-flex align-items-center limaazul">
+        <div class="containeringreso d-flex align-items-center" style="background-color: #24fcc4">
 
             <form class="container formssmall" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <h2>/ LOG IN</h2>

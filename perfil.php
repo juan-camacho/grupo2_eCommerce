@@ -13,11 +13,11 @@ session_start();
     <!-- Perfil  -->
     <main>
 
-        <div class="hero purpink d-flex align-items-center">
+        <div class="hero d-flex align-items-center" style="background-color: #24fcc4">
             <div class="container">
                 <div class="col">
                     <div class="row">
-                        <h6>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h6>
+                        <h2>  <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </h2>
                     </div>
                     <div class="row">
                         <h4> Buenos Aires, Argentina </h4>

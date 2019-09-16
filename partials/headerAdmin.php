@@ -5,10 +5,10 @@ if($_SESSION['rol'] = 1){
   <h4 class="letrablanca p-3"> Hola Admin! </h4>
     <div id="accordion">
   <div class="card letrablanca">
-    <div class="card-header" id="headingOne">
+    <div class="card-header letrablanca" id="headingOne">
         <a class="d-flex row mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <div class="col-2">
-              <i class="fas fa-edit letrablanca"></i>
+              <i class="fas fa-edit"></i>
           </div>
           <div class="col-10 pl-0 titleHeaderAdmin">
             Páginas
@@ -29,10 +29,10 @@ if($_SESSION['rol'] = 1){
   </div>
 
   <div class="card letrablanca">
-    <div class="card-header" id="headingTwo">
+    <div class="card-header letrablanca" id="headingTwo">
         <a class="d-flex row mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <div class="col-2">
-              <i class="fas fa-bars letrablanca"></i>
+              <i class="fas fa-bars "></i>
           </div>
           <div class="col-10 pl-0 titleHeaderAdmin">
             Productos
@@ -43,7 +43,7 @@ if($_SESSION['rol'] = 1){
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div id="accordion2">
               <div class="card letrablanca">
-                <div class="card-header subtitleheaderAdmin" id="heading3">
+                <div class="card-header subtitleheaderAdmin " id="heading3">
                     <a class="d-flex row mb-0" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
                       <div class="col-2">
                       </div>
