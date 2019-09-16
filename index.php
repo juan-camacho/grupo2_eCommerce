@@ -1,5 +1,6 @@
-<?php $tittle = "IDEA COB - Home"?>
-<?php require_once("partials/head.php")?>
+<?php $tittle = "IDEA COB - Home";
+session_start();?>
+<?php require_once("partials/head.php");?>
 <?php require_once("partials/header.php");?>
 <main>
   <?php

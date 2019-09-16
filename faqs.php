@@ -1,9 +1,8 @@
-<?php $tittle = "Tienda Babuino - FAQS" ?>
-<!DOCTYPE html>
-<html lang="es">
-<?php require_once("partials/head.php")?>
+<?php $tittle = "Tienda Babuino - FAQS";
+session_start(); ?>
+<?php require_once("partials/head.php");?>
 <body>
-<?php require_once("partials/header.php")?>
+<?php require_once("partials/header.php");?>
         <!-- FAQS  -->
 
         <div class="fullslider"  id="fsfaqs" >>

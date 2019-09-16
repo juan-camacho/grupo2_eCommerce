@@ -1,6 +1,5 @@
-<?php $tittle = "Tienda Babuino - productos"?>
-<!DOCTYPE html>
-<html lang="es">
+<?php $tittle = "Carrito";
+session_start();?>
 <?php require_once("partials/head.php")?>
 <body>
     <?php require_once("partials/header.php"); ?>

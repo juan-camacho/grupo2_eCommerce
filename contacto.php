@@ -1,6 +1,5 @@
-<?php $tittle = "Tienda Babuino - Home"?>
-<!DOCTYPE html>
-<html lang="es">
+<?php $tittle = "IDEA - Contacto";
+session_start();?>
 <?php require_once("partials/head.php")?>
 <body>
 <?php require_once("partials/header.php")?>
@@ -12,8 +11,6 @@
                           <h1> ESCRIBINOS </h1>
                       </div>
                   </div>
-
-
 </main>
 <!-- Footer -->
 <?php require_once("partials/footer.php") ?>
