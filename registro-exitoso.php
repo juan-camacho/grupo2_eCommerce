@@ -1,8 +1,6 @@
 <?php $tittle = "IDEA COB - Registro exitoso"?>
 <?php
 session_start();
-
-
  ?>
 <!DOCTYPE html>
 <html lang="es">

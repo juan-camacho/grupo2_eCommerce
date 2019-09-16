@@ -22,12 +22,14 @@ if ($_REQUEST) {
               $stmt->execute();
               $user = $stmt->fetch(PDO::FETCH_ASSOC);
               $_SESSION['user'] = $user;
+              $_SESSION['active'] = true;
                 header('location: registro-exitoso.php');
             } else {
                 $message = 'El email es ya se encuentra registrado';
             }
         }
     }
+    
 }
 ?>
 <!DOCTYPE html>

@@ -96,11 +96,7 @@
          <a href="aperturasBorrar.php?id=<?php echo $apertura['id'] ?>" class="btn btn-fnegro">BORRAR</a>
        </form>
      </div>
-
-
-
     </div>
-
   </div>
   </div>
 

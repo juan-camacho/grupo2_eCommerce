@@ -23,8 +23,13 @@
 ?>
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
-<main class="purporange">
-  <div class="containerbackend">
+
+<div class="container-fluid px-0">
+  <div class="row d-flex no-gutters">
+    <?php require_once 'partials/headerAdmin.php' ?>
+
+<div class="col">
+  <div class="container vh-100" id="containerbackend">
     <form class="contenedor_ap" method="post" enctype="multipart/form-data">
       <h2 id="letrablanca">/ NUEVO COLOR DE TEMPERATPURA</h2>
 
@@ -61,6 +66,10 @@
       <button class="btn btn-fnegro" type="submit">GUARDAR</button>
       <a href="aperturasListar.php" class="btn btn-fnegro">VOLVER</a>
     </form>
+    </div>
   </div>
-</main>
+
+    </div>
+</div>
+
 <?php require_once 'partials/footer.php' ?>

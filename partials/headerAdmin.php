@@ -1,3 +1,6 @@
+<?php
+if($_SESSION['rol'] = 1){
+  ?>
 <nav class="col-12 col-md-3 col-xl-2 bg-dark mt-3 vh-100 pt-5 navAdmin px-0">
   <h4 class="letrablanca p-3"> Hola Admin! </h4>
     <div id="accordion">
@@ -119,8 +122,6 @@
                     </ul>
                 </div>
               </div>
-
-
           </div>
           <div id="accordion6">
               <div class="card letrablanca">
@@ -137,26 +138,18 @@
                       </div>
                     </a>
                 </div>
-
                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion6">
                     <ul>
-                      <li class="py-1 pl-4 f100"> <a href="marcosAgregar.php"> Agregar </a></li>
-                      <li  class="py-1 pl-4 f100"> <a href="marcosBorrar.php"> Borrar </a> </li>
-                      <li  class="py-1 pl-4 f100"> <a href="marcosEditar.php"> Editar </a> </li>
-                      <li  class="py-1 pl-4 f100"> <a href="marcosListar.php"> Listar </a> </li>
+                      <li class="py-1 pl-4 f100"> <a href="marcoAgregar.php"> Agregar </a></li>
+                      <li  class="py-1 pl-4 f100"> <a href="marcoBorrar.php"> Borrar </a> </li>
+                      <li  class="py-1 pl-4 f100"> <a href="marcoEditar.php"> Editar </a> </li>
+                      <li  class="py-1 pl-4 f100"> <a href="marcoListar.php"> Listar </a> </li>
                     </ul>
                 </div>
               </div>
-
-
           </div>
-
       </div>
     </div>
-
   </div>
-
-
-
-
 </nav>
+<?php } ?>

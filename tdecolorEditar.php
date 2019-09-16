@@ -1,12 +1,9 @@
 <?php
-
   $pageTitle = 'IDEA COB | Editar TEMPERATURA';
-
   require_once 'php/config/config.php';
   require_once 'php/funciones.php';
   require_once 'php/forms/editarTdecolorForm.php';
   require_once 'php/models/tdecolorModel.php';
-
   if ($_POST) {
       validateForm();
       if (isValid()) {
@@ -30,13 +27,17 @@
 ?>
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
-<main class="purporange">
-  <div class="containerbackend">
+<div class="container-fluid px-0">
+  <div class="row d-flex no-gutters">
+    <?php require_once 'partials/headerAdmin.php' ?>
+
+    <div class="col">
+     <div class="container vh-100" id="containerbackend">
     <form class="contenedor_ap" method="post" enctype="multipart/form-data">
       <input type="hidden" name="id" value="<?php echo $tdecolor['id'] ?>">
       <input type="hidden" name="imagen_existente" value="<?php echo $tdecolor['imagen'] ?>">
 
-      <h2 id="letrablanca">/ EDITAR temperatura</h2>
+      <h2 id="letrablanca">/ EDITAR TEMPERATURA</h2>
       <?php if ($tdecolor['imagen']) : ?>
         <div class="form-row mb-3">
           <img src="<?php echo TDECOLOR_IMG_PATH . $tdecolor['imagen'] ?>" class="card-img-top" alt="<?php echo $tdecolor['temperatura'] ?>">
@@ -91,5 +92,7 @@
       <a href="tdecolorBorrar.php?id=<?php echo $tdecolor['id'] ?>" class="btn btn-fnegro">BORRAR</a>
     </form>
   </div>
-</main>
+ </div>
+ </div>
+ </div>
 <?php require_once 'partials/footer.php' ?>

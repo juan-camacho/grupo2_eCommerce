@@ -6,18 +6,19 @@
   require_once 'php/models/tdecolorModel.php';
 
   $tdecolor = traerTdecolor($pdo);
-
 ?>
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
-<main class="purporange">
-  <div class="containerbackend">
+<div class="container-fluid px-0">
+  <div class="row d-flex no-gutters">
+    <?php require_once 'partials/headerAdmin.php' ?>
+<div class="col">
+ <div class="container vh-100" id="containerbackend">
+   <div class="contenedor_ap">
     <h2 id="letrablanca">/ LISTADO DE tempratura</h2>
     <p>
       <a href="tdecolorAgregar.php" class="btn btn-famarilloblanco">Agregar nueva Temperatura</a>
     </p>
-
-    <div class="row" style="width: 100%">
       <?php foreach ($tdecolor as $tcolor) : ?>
       <div class="col col-xs-12 col-sm-6 col-md-3">
         <div class="card">
@@ -25,8 +26,7 @@
           <div class="card-body">
             <h4 class="card-title"><?php echo $tcolor['temperatura'] ?></h4>
             <p class="card-text">
-              <strong>Ángulo:</strong> <?php echo $tcolor['unidad'] ?><br>
-
+              <strong>unidad:</strong> <?php echo $tcolor['unidad'] ?><br>
             </p>
             <a href="tdecolorEditar.php?id=<?php echo $tcolor['id'] ?>" class="btn btn-famarilloblanco">Editar</a>
           </div>
@@ -34,7 +34,8 @@
       </div>
       <?php endforeach; ?>
     </div>
-
-  </div>
-</main>
+      </div>
+     </div>
+   </div>
+   </div>
 <?php require_once 'partials/footer.php' ?>

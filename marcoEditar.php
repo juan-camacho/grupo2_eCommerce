@@ -1,12 +1,9 @@
 <?php
-
   $pageTitle = 'IDEA COB | Editar Marco';
-
   require_once 'php/config/config.php';
   require_once 'php/funciones.php';
   require_once 'php/forms/editarMarcoForm.php';
   require_once 'php/models/marcoModel.php';
-
   if ($_POST) {
       validateForm();
       if (isValid()) {
@@ -41,10 +38,10 @@
          <input type="hidden" name="id" value="<?php echo $marco['id'] ?>">
          <input type="hidden" name="imagen_existente" value="<?php echo $marco['imagen'] ?>">
 
-         <h2 id="letrablanca">/ EDITAR Marco</h2>
+         <h2 id="letrablanca">/ EDITAR MARCO</h2>
          <?php if ($marco['imagen']) : ?>
            <div class="form-row mb-3">
-             <img src="<?php echo APERTURAS_IMG_PATH . $marco['imagen'] ?>" class="card-img-top" alt="<?php echo $marco['nombre'] ?>">
+             <img src="<?php echo MARCO_IMG_PATH . $marco['imagen'] ?>" class="card-img-top" alt="<?php echo $marco['nombre'] ?>">
            </div>
          <?php endif; ?>
 
@@ -94,18 +91,9 @@
          <button class="btn btn-fnegro" type="submit">GUARDAR</button>
          <a href="marcoListar.php" class="btn btn-fnegro">VOLVER</a>
          <a href="marcoBorrar.php?id=<?php echo $marco['id'] ?>" class="btn btn-fnegro">BORRAR</a>
-        
        </form>
      </div>
-
-
-
     </div>
-
   </div>
   </div>
-
-
-
-
 <?php require_once 'partials/footer.php' ?>

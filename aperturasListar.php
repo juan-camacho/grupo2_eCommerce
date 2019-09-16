@@ -7,15 +7,11 @@
 
   $aperturas = traerAperturas($pdo);
 ?>
-
 <?php require_once 'partials/head.php' ?>
 <?php require_once 'partials/header.php' ?>
-
     <div class="container-fluid px-0">
       <div class="row d-flex no-gutters">
         <?php require_once 'partials/headerAdmin.php' ?>
-
-
     <div class="col">
      <div class="container vh-100" id="containerbackend">
        <div class="contenedor_ap">
@@ -39,15 +35,9 @@
        </div>
        <?php endforeach; ?>
    </div>
-
      </div>
-
-
-
     </div>
-
   </div>
-
 </div>
 
 

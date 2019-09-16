@@ -185,20 +185,17 @@ CREATE TABLE `users` (
   `lastname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rol` int(11) NOT NULL DEFAULT '3',
+  `status` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `lastname`, `image`, `email`, `password`) VALUES
-(1, 'juan', 'camacho', NULL, 'juan@juan.com', '$2y$10$1a7VP9U2BDRu3sYtSknHSep3BycJ2KoHrzzgT63EZZDLK4NJZonri');
-
---
--- Índices para tablas volcadas
---
-
+INSERT INTO `users` (`id`, `name`, `lastname`, `image`, `email`, `password`, `rol`, `status`) VALUES
+(1, 'juan', 'camacho', NULL, 'juan@juan.com', '$2y$10$1a7VP9U2BDRu3sYtSknHSep3BycJ2KoHrzzgT63EZZDLK4NJZonri', 1, 1);
 --
 -- Indices de la tabla `aperturas`
 --
@@ -266,16 +263,23 @@ ALTER TABLE `products`
   ADD KEY `marco_id` (`marco_id`);
 
 --
--- Indices de la tabla `roles`
+-- Indices de la tabla `rol`
 --
 
-CREATE TABLE `roles` (
-  `id` int(11) AUTO_INCREMENT primary KEY,
-  `admin` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `comprador` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `rol` (
+  `idrol` int(11) AUTO_INCREMENT primary KEY,
+  `rol` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+--
+-- Volcado de datos para la tabla `rol`
+--
+
+INSERT INTO `rol` (`idrol`, `rol`) VALUES
+(1, 'Admin'),
+(2, 'Vendedor'),
+(3, 'cliente');
 --
 -- Indices de la tabla `users`
 --
@@ -316,7 +320,12 @@ ALTER TABLE `nucleos`
   ADD CONSTRAINT `nucleos_ibfk_1` FOREIGN KEY (`familia_id`) REFERENCES `familia` (`id`);
 
 
-
+  --
+  -- Filtros para la tabla `usuario`
+  --
+  ALTER TABLE `users`
+    ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`rol`) REFERENCES `rol` (`idrol`) ON DELETE CASCADE ON UPDATE CASCADE;
+  COMMIT;
 
 
 --

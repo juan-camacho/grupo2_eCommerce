@@ -12,6 +12,7 @@ if ($_POST) {
     if ($user) {
         if (PASSWORD_VERIFY($_POST['password'], $user['password'])) {
             $_SESSION['user'] = $user;
+            $_SESSION['active'] = true;
             header('location: perfil.php');
         }
     }
@@ -51,7 +52,7 @@ if ($_POST) {
                 </div>
                 <div class="form-row d-flex justify-content-center my-2">
                     <label>
-                        <input type="checkbox" checked="checked" name="recuerdame"> Recuerdame!
+                        <input type="checkbox" checked="checked" name="status"> Recuerdame!
                     </label>
                 </div>
             </form>

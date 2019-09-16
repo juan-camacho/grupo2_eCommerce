@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Idea COB - Armá tu producto";
-
+session_start();
 require_once 'php/config/config.php';
 require_once 'php/models/aperturaModel.php';
 require_once 'php/models/tdecolorModel.php';

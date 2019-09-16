@@ -23,15 +23,24 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+              <?php if (!empty($_SESSION['active'])){ ?>
               <li class="nav-item">
+                <a class="nav-link" href="perfil.php" title="usuario"><i class="far fa-user-circle" aria-hidden="true"></i><strong> <?= $_SESSION['user']['name'] . ' ' . $_SESSION['user']['lastname'] ?> </strong> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i></a>
+              </li>
+                <li class="nav-item">
+              <a class="nav-link" href="salirusuario.php"><i class="fas fa-power-off" aria-hidden="true" title="Salir"></i> </a>
+                </li>
+              <?php } else { ?>
+                <li class="nav-item">
                   <a class="nav-link" href="ingreso.php">INGRESA</a>
-              </li>
-              <li class="nav-item">
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="register.php">REGISTRATE</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-              </li>
+                </li>
+            <?php }; ?>
             </ul>
         </div>
     </nav>
